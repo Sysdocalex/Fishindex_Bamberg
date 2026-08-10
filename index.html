@@ -74,32 +74,96 @@ h1{margin:0;font-size:20px;font-weight:700}
 
 <script>
 const data = [
-  {"name":"Aal","czech":"úhoř","also_called":"Europäischer Aal","czech_also_called":"evropský úhoř","systematics":"Ordnung: Aalartige; Familie: Aalartige","czech_systematics":"Řád: úhořotvá[...]
-  {"name":"Äsche","czech":"lipan","also_called":"Europäische Äsche","czech_also_called":"lipan podhorní","systematics":"Ordnung: Lachsartige; Familie: Lachsfische","czech_systematics":"Řád: loso[...]
-  {"name":"Aland","czech":"jelec tloušť","also_called":"Nerfling, Orfe","czech_also_called":"jelec tloušť","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematics":"Řád[...]
-  {"name":"Bachforelle","czech":"pstruh obecný","also_called":"Flussforelle, Bergforelle, Fario","czech_also_called":"pstruh potoční, říční pstruh, horský pstruh","systematics":"Ordnung: Lachs[...]
-  {"name":"Barbe","czech":"parma obecná","also_called":"Flussbarbe, Barbel, Pigge","czech_also_called":"říční parma","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systemat[...]
-  {"name":"Barsch","czech":"okoun říční","also_called":"Flussbarsch, am Bodensee Kretzer, am Chiemsee Schratze","czech_also_called":"okoun říční","systematics":"Ordnung: Barschartige; Familie:[...]
-  {"name":"Brasse","czech":"cejn velký","also_called":"Brachse, Brachsme, Brese, Pliete oder Blei","czech_also_called":"cejn velký","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","cz[...]
-  {"name":"Döbel","czech":"jelec tloušť","also_called":"Eitel, Aitel, Alet","czech_also_called":"tloušť obecný","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematics"[...]
-  {"name":"Giebel","czech":"karas stříbřitý","also_called":"Silberkarausche","czech_also_called":"karas stříbřitý","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systema[...]
-  {"name":"Hecht","czech":"štika obecná","also_called":"Hecht","czech_also_called":"štika obecná","systematics":"Ordnung: Hechtartige; Familie: Hechte","czech_systematics":"Řád: štikotvární; [...]
-  {"name":"Huchen","czech":"hlavatka obecná","also_called":"Donaulachs oder Rotfisch","czech_also_called":"hlavatka obecná","systematics":"Ordnung: Lachsartige; Familie: Lachsfische","czech_systemat[...]
-  {"name":"Karausche","czech":"karas obecný","also_called":"Schusterkarpfen, Schneiderkarpfen, Bauernkarpfen, Steinkarpfen, Moorkarpfen","czech_also_called":"karas obecný","systematics":"Ordnung: Ka[...]
-  {"name":"Karpfen","czech":"kapr obecný","also_called":"Karpfen","czech_also_called":"kapr obecný","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematics":"Řád: kaprotvá[...]
-  {"name":"Nase","czech":"jelec proudník","also_called":"Näsling oder Schnabel","czech_also_called":"jelec proudník","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematic[...]
-  {"name":"Quappe","czech":"mník jednovousý","also_called":"Trüsche, Trische, Treische, Rutte, Ruppe, Aalrutte, Aalquappe, Aalraupe, Quappaal","czech_also_called":"mník jednovousý","systematics":[...]
-  {"name":"Rapfen","czech":"bolen dravý","also_called":"Schied","czech_also_called":"bolen dravý","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematics":"Řád: kaprotvá[...]
-  {"name":"Regenbogenforelle","czech":"pstruh duhový","also_called":"Regenbogenforelle","czech_also_called":"pstruh duhový","systematics":"Ordnung: Lachsartige; Familie: Lachsfische","czech_systemat[...]
-  {"name":"Rotauge","czech":"plotice obecná","also_called":"Plötze, Unechte Rotfeder, Schwal","czech_also_called":"plotice obecná","systematics":"Ordnung: Karpfenartige; Unterordnung: Karpfenfisch[...]
-  {"name":"Rotfeder","czech":"perlín ostrobřichý","also_called":"Unechtes Rotauge, Rötel oder Rotblei","czech_also_called":"perlín ostrobřichý","systematics":"Ordnung: Karpfenartige; Familie: K[...]
-  {"name":"Saibling","czech":"siven americký","also_called":"Bachsaibling","czech_also_called":"siven alpský","systematics":"Ordnung: Lachsartige; Familie: Lachsfische","czech_systematics":"Řád: l[...]
-  {"name":"Schleie","czech":"lín obecný","also_called":"Schlei","czech_also_called":"lín obecný","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_systematics":"Řád: kaprotvá[...]
-  {"name":"Schmerle","czech":"mřenka mramorovaná","also_called":"Bachschmerle, Bartgrundel","czech_also_called":"mřenka mramorovaná","systematics":"Ordnung: Karpfenartige; Familie: Schmerlen","cze[...]
-  {"name":"Seeforelle","czech":"pstruh obecný jezerní","also_called":"Seeforelle","czech_also_called":"pstruh jezerní","systematics":"Ordnung: Lachsartige; Familie: Lachsfische","czech_systematics"[...]
-  {"name":"Wels","czech":"sumec velký","also_called":"Europäischer Wels, Waller oder Schaidfisch","czech_also_called":"sumec velký","systematics":"Ordnung: Welsartige; Familie: Echte Welse","czech_[...]
-  {"name":"Zährte","czech":"ouklejka pruhovaná","also_called":"Zährte, Rußnase","czech_also_called":"ouklejka pruhovaná","systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische","czech_syst[...]
-  {"name":"Zander","czech":"candát obecný","also_called":"Sander, Schill, Hechtbarsch, Zahnmaul oder Fogosch","czech_also_called":"candát obecný","systematics":"Ordnung: Barschartige; Familie: Ech[...]
+  {
+    "name":"Aal",
+    "czech":"úhoř",
+    "also_called":"Europäischer Aal",
+    "czech_also_called":"evropský úhoř",
+    "systematics":"Ordnung: Aalartige; Familie: Aalartige",
+    "czech_systematics":"Řád: úhořotvá; Čeleď: úhořovití",
+    "features":"Schlangenförmiger Körper, Schuppen kaum sichtbar",
+    "czech_features":"Hadí tvar, šupiny málo viditelné",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Aal",
+    "wiki":"https://cs.wikipedia.org/wiki/Úhoř"
+  },
+  {
+    "name":"Äsche",
+    "czech":"lipan",
+    "also_called":"Europäische Äsche",
+    "czech_also_called":"lipan podhorní",
+    "systematics":"Ordnung: Lachsartige; Familie: Lachsfische",
+    "czech_systematics":"Řád: losovití; Čeleď: lososovití",
+    "features":"Silberner Körper, annähernd seitlich abgeflacht",
+    "czech_features":"Stříbrné tělo, zploštělé ze stran",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Äsche",
+    "wiki":"https://cs.wikipedia.org/wiki/Lipan"
+  },
+  {
+    "name":"Hecht",
+    "czech":"štika obecná",
+    "also_called":"Hecht",
+    "czech_also_called":"štika obecná",
+    "systematics":"Ordnung: Hechtartige; Familie: Hechte",
+    "czech_systematics":"Řád: štikotvární; Čeleď: štikovití",
+    "features":"Langer Körper, spitze Schnauze, scharfe Zähne",
+    "czech_features":"Dlouhé tělo, špičatá tlamka, ostré zuby",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Hecht",
+    "wiki":"https://cs.wikipedia.org/wiki/Štika"
+  },
+  {
+    "name":"Karpfen",
+    "czech":"kapr obecný",
+    "also_called":"Karpfen",
+    "czech_also_called":"kapr obecný",
+    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
+    "czech_systematics":"Řád: kaprovití; Čeleď: kaprovití",
+    "features":"Breiter Körper, Barteln an der Oberlippe",
+    "czech_features":"Široké tělo, vousky na horním pysku",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Karpfen",
+    "wiki":"https://cs.wikipedia.org/wiki/Kapr"
+  },
+  {
+    "name":"Zander",
+    "czech":"candát obecný",
+    "also_called":"Zander",
+    "czech_also_called":"candát obecný",
+    "systematics":"Ordnung: Barschartige; Familie: Echsenbarsche",
+    "czech_systematics":"Řád: okounovití; Čeleď: candáti",
+    "features":"Schlanker Körper, spitze Zähne",
+    "czech_features":"Štíhlé tělo, ostré zuby",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Zander",
+    "wiki":"https://cs.wikipedia.org/wiki/Candát"
+  },
+  {
+    "name":"Wels",
+    "czech":"sumec velký",
+    "also_called":"Europäischer Wels",
+    "czech_also_called":"sumec velký",
+    "systematics":"Ordnung: Welsartige; Familie: Echte Welse",
+    "czech_systematics":"Řád: sumcovití; Čeleď: sumcovití",
+    "features":"Großer Körper, Barteln rund um die Schnauze",
+    "czech_features":"Velké tělo, vousky kolem tlamy",
+    "schonzeit":"–",
+    "schonmass":"–",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Wels_(Fisch)",
+    "wiki":"https://cs.wikipedia.org/wiki/Sumec"
+  }
 ];
 function normalizeName(name){return (name||"").toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/[^a-z0-9]+/g,"");}
 function splitBaseName(name){return (name||"").split(",")[0].trim();}
@@ -173,7 +237,7 @@ function renderCards(items){
       <div class="field"><strong>Schonmaß:</strong><br><span class="small">${it.schonmass || "–"}</span></div>
     `;
     const links=document.createElement("p");
-    links.innerHTML=`<a class="link" href="${it.description_link}" target="_blank">Popis WikipediE</a> · <a class="link" href="${it.wiki}" target="_blank">Beschreibung WikipediA</a>`;
+    links.innerHTML=`<a class="link" href="${it.description_link}" target="_blank">Beschreibung (de)</a> · <a class="link" href="${it.wiki}" target="_blank">Popis (cs)</a>`;
     content.appendChild(nameRow);
     content.appendChild(meta);
     content.appendChild(links);
