@@ -117,7 +117,7 @@ h1{margin:0;font-size:20px;font-weight:700}
   <h3>Links zu Fischereiverordnung und -Bestimmungen Bayer./Ofr. FischG.</h3>
   <div class="regulation-links">
     <a href="https://www.gesetze-bayern.de/Content/Document/BayFischG" target="_blank" class="btn">BayFiG</a>
-    <a href="https://www.gesetze-bayern.de/Content/Document/BayAVFiG" target="_blank" class="btn btn-secondary">AVBayFiG</a>
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayAVFiG-ANL_1" target="_blank" class="btn btn-secondary">AVBayFiG (Schonzeiten)</a>
     <a href="https://www.tegof.de/service/gesetze/bezirksfischereiverordnung_fuer_oberfranken.html" target="_blank" class="btn btn-info">BezirksFV Ofr.</a>
     <a href="https://www.verkuendung-bayern.de/gvbl/2025-126/" target="_blank" class="btn btn-info">Novelle 2025</a>
   </div>
@@ -549,36 +549,6 @@ const data = [
     "wiki":"https://cs.wikipedia.org/wiki/Zingel_zingel"
   },
   {
-    "name":"Quappe",
-    "czech":"mník jednovousý",
-    "also_called":"<b>Rutte (regional)</b>, Trüsche, Trische, Treische, Ruppe, Aalrutte, Aalquappe, Aalraupe, Quappaal",
-    "czech_also_called":"mník jednovousý",
-    "systematics":"Klasse: Strahlenflosser; Ordnung: Dorschartige; Familie: Quappen; Gattung: Lota; Art: Quappe",
-    "czech_systematics":"Třída: paprskoploutví; Řád: treskotvární; Čeleď: mníkovití; Rod: Lota; Druh: mník jednovousý",
-    "features":"Langgestreckter, vorne rundlicher und hinten abgeflachter Körper, braun bis gelblich marmoriert, zwei Rückenflossen, langer Bartfaden am Kinn, nachtaktiv und bodenbewohnend",
-    "czech_features":"Protáhlé tělo, vpředu oblější a vzadu zploštělé, hnědě až nažloutle mramorované, dvě hřbetní ploutve, dlouhý vous na bradě, noční a při dně žijící ryba",
-    "schonzeit":"–",
-    "schonmass":"40 cm",
-    "status":"heimisch",
-    "description_link":"https://de.wikipedia.org/wiki/Quappe",
-    "wiki":"https://cs.wikipedia.org/wiki/Mn%C3%ADk_jednovous%C3%BD"
-  },
-  {
-    "name":"Rapfen",
-    "czech":"bolen dravý",
-    "also_called":"Schied",
-    "czech_also_called":"bolen dravý",
-    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
-    "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
-    "features":"Schneller Räuber, silberner Körper, Oberflächenjäger",
-    "czech_features":"Rychlý dravec, stříbrné tělo, loví u hladiny",
-    "schonzeit":"01.03. - 30.04.",
-    "schonmass":"40 cm",
-    "status":"heimisch",
-    "description_link":"https://de.wikipedia.org/wiki/Rapfen",
-    "wiki":"https://cs.wikipedia.org/wiki/Bolen_drav%C3%BD"
-  },
-  {
     "name":"Regenbogenforelle",
     "czech":"pstruh duhový",
     "also_called":"Regenbogenforelle",
@@ -588,7 +558,7 @@ const data = [
     "features":"Gefleckt, eingeführte Art, beliebt in Forellengewässern",
     "czech_features":"Skvrnitá, nepůvodní druh, oblíbená v pstruhových vodách",
     "schonzeit":"15.12. - 15.03.",
-    "schonmass":"26 cm",
+    "schonmass":"33 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Regenbogenforelle",
     "wiki":"https://cs.wikipedia.org/wiki/Pstruh_duhov%C3%BD"
@@ -624,6 +594,21 @@ const data = [
     "wiki":"https://cs.wikipedia.org/wiki/Perl%C3%ADn_ostrob%C5%99ich%C3%BD"
   },
   {
+    "name":"Rutte (regional)",
+    "czech":"mník jednovousý",
+    "also_called":"Quappe, Trüsche, Trische, Treische, Ruppe, Aalrutte, Aalquappe, Aalraupe, Quappaal",
+    "czech_also_called":"mník jednovousý",
+    "systematics":"Klasse: Strahlenflosser; Ordnung: Dorschartige; Familie: Quappen; Gattung: Lota; Art: Quappe",
+    "czech_systematics":"Třída: paprskoploutví; Řád: treskotvární; Čeleď: mníkovití; Rod: Lota; Druh: mník jednovousý",
+    "features":"Langgestreckter, vorne rundlicher und hinten abgeflachter Körper, braun bis gelblich marmoriert, zwei Rückenflossen, langer Bartfaden am Kinn, nachtaktiv und bodenbewohnend",
+    "czech_features":"Protáhlé tělo, vpředu oblější a vzadu zploštělé, hnědě až nažloutle mramorované, dvě hřbetní ploutve, dlouhý vous na bradě, noční a při dně žijící ryba",
+    "schonzeit":"–",
+    "schonmass":"40 cm",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Quappe",
+    "wiki":"https://cs.wikipedia.org/wiki/Mn%C3%ADk_jednovous%C3%BD"
+  },
+  {
     "name":"Saibling",
     "czech":"siven americký",
     "also_called":"Bachsaibling",
@@ -637,6 +622,21 @@ const data = [
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Saiblinge",
     "wiki":"https://cs.wikipedia.org/wiki/Siven_americk%C3%BD"
+  },
+  {
+    "name":"Schied (regional)",
+    "czech":"bolen dravý",
+    "also_called":"Rapfen",
+    "czech_also_called":"bolen dravý",
+    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
+    "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
+    "features":"Schneller Räuber, silberner Körper, Oberflächenjäger",
+    "czech_features":"Rychlý dravec, stříbrné tělo, loví u hladiny",
+    "schonzeit":"01.03. - 30.04.",
+    "schonmass":"40 cm",
+    "status":"heimisch",
+    "description_link":"https://de.wikipedia.org/wiki/Rapfen",
+    "wiki":"https://cs.wikipedia.org/wiki/Bolen_drav%C3%BD"
   },
   {
     "name":"Schleie",
