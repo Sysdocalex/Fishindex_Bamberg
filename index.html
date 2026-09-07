@@ -1009,6 +1009,14 @@ function renderCards(items){
         </div>
       </details>
 
+      <details class="detailsbox">
+        <summary><strong>Prüfungsfragen</strong></summary>
+        <div class="detailcontent">
+          <div class="field"><strong>Prüfungsfragen:</strong><br><span class="small">${it.features || ""}</span></div>
+          <div class="field"><strong>Zkušební otázky:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
+        </div>
+      </details>
+
       <div class="field"><strong>Schonzeit:</strong><br><span class="small">${it.schonzeit || "–"}</span></div>
       <div class="field"><strong>Schonmaß:</strong><br><span class="small">${it.schonmass || "–"}</span></div>
     `;
@@ -1027,7 +1035,7 @@ function applyFilters(){
   const status=document.getElementById("statusFilter").value.toLowerCase();
   const sortBy=document.getElementById("sortBy").value;
   let filtered=data.filter(it=>{
-    const hay=[it.name,it.full_name,it.czech,it.also_called,it.systematics,it.czech_systematics,it.features,it.czech_features,it.schonzeit,it.schonmass,it.status].join(" ").toLowerCase();
+    const hay=[it.name,it.full_name,it.czech,it.also_called,it.systematics,it.czech_systematics,it.features,it.czech_features,it.exam_questions,it.schonzeit,it.schonmass,it.status].join(" ").toLowerCase();
     return (!term || hay.includes(term)) && (!status || (it.status||"").toLowerCase()===status);
   });
   if(sortBy==="name") filtered.sort((a,b)=>a.name.localeCompare(b.name,"de"));
