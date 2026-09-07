@@ -992,21 +992,21 @@ function renderCards(items){
     meta.className="meta";
     meta.innerHTML=`
       <div class="field"><strong>Auch genannt:</strong><br><span class="small"><b>${also}</b></span></div>
-      <div class="field"><strong>Tschechisch:</strong><br><span class="small"><b>${it.czech || "–"}</b></span></div>
+      <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech || "–"}</b></span></div>
 
       <details class="detailsbox">
         <summary><strong>Systematik</strong></summary>
         <div class="detailcontent">
-          <div class="field"><strong>Systematik:</strong><br><span class="small">${it.systematics || ""}</span></div>
-          <div class="field"><strong>Tschechisch:</strong><br><span class="small"><b>${it.czech_systematics || "–"}</b></span></div>
+          <div class="field"><span class="small">${it.systematics || ""}</span></div>
+          <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech_systematics || "–"}</b></span></div>
         </div>
       </details>
 
       <details class="detailsbox">
         <summary><strong>Merkmale</strong></summary>
         <div class="detailcontent">
-          <div class="field"><strong>Merkmale:</strong><br><span class="small">${it.features || ""}</span></div>
-          <div class="field"><strong>Tschechisch:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
+          <div class="field"><span class="small">${it.features || ""}</span></div>
+          <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
         </div>
       </details>
 
@@ -1014,7 +1014,7 @@ function renderCards(items){
         <summary><strong>Prüfungsfragen</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.exam || ""}</span></div>
-          <div class="field"><strong>Zkušební otázky:</strong><br><span class="small"><b>${it.czech_exam || "–"}</b></span></div>
+          <div class="field"><strong>čeština:</strong><br><strong>Zkušební otázky:</strong><br><span class="small"><b>${it.czech_exam || "–"}</b></span></div>
         </div>
       </details>
 
