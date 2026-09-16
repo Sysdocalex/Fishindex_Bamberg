@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Interaktiver Fischindex — Regnitz / Bamberg</title>
+<title>Fischindex und Lernmaterial für Angelprüfung in Bamberg/Oberfranken/Bayern</title>
 <style>
 :root{
   --bg:#f3fbff; --card:#ffffff; --accent:#0f6c8f; --muted:#556;
@@ -22,7 +22,7 @@ h1{margin:0;font-size:20px;font-weight:700}
 .thumb{max-width:100%;max-height:100%;object-fit:cover;border-radius:8px}
 .content{padding:12px;flex:1;display:flex;flex-direction:column;gap:8px}
 .nameRow{display:flex;gap:8px;align-items:center;justify-content:space-between}
-.nameCol{display:flex;gap:6px;flex-direction:column;background:#fff;padding: 2px 5px;border-radius:6px}
+.nameCol{display:flex;gap:6px;flex-direction:column;background:#fff;padding: 1px 5px;border-radius:6px}
 .small{font-size:13px;color:var(--muted)}
 .meta{display:flex;flex-direction:column;gap:10px}
 .badge{padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
@@ -96,21 +96,21 @@ h1{margin:0;font-size:20px;font-weight:700}
 <body>
 <header>
   <div style="display:flex;align-items:center;gap:12px">
-    <h1>Interaktiver Fischindex — Regnitz (Bamberg)</h1>
+    <h1>Fischindex und Lernmaterial für Angelprüfung in Bamberg/Oberfranken/Bayern</h1>
   </div>
 </header>
 
 <div class="controls">
   <input id="q" placeholder="Suche (deutscher oder tschechischer Name, Schonzeit...)" />
   <select id="statusFilter">
-    <option value="">Alle Status</option>
+    <option value="Status">Alle Status</option>
     <option value="heimisch">heimisch</option>
     <option value="gefährdet">gefährdet</option>
     <option value="ausgestorben">ausgestorben</option>
     <option value="unbekannt">unbekannt</option>
   </select>
   <select id="sortBy">
-    <option value="">Sortieren</option>
+    <option value="Sortieren nach">Schonzeiten</option>
     <option value="name">Name A–Z</option>
     <option value="status">Status</option>
   </select>
@@ -207,7 +207,7 @@ const data = [
     "exam":"Welche Fischart hat den größten Sauerstoffbedarf? → Bachforelle<br>Woran erkennt man Forellenartige? -- Fettflosse<br>Schonzeit Bachforelle? -- 01.10. - 15.03., Mindestmaß 26 cm",
     "czech_exam":"Který druh ryby má nejvyšší potřebu kyslíku? → Pstruh potoční<br>Jak poznáte ryby z čeledi pstruhovitých? -- Tuková ploutev<br>Ochranná doba pstruha potočního? -- 01.10. - 15.03., minimální délka 26 cm",
     "schonzeit":"01.10. - 15.03.",
-    "schonmass":"26 cm (33 cm regional)",
+    "schonmass":"26 cm<br>(33 cm regional)",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Bachforelle",
     "wiki":"https://cs.wikipedia.org/wiki/Pstruh_obecný_potoční"
@@ -240,7 +240,7 @@ const data = [
     "czech_features":"torpédovitě tvarované, robustní tělo. Hřbet je olivový až hnědozelený, stejně jako hřbetní ploutev s jasnými mramorovými vzory.<br>Na bocích jsou žlutavé a červené tečky, často modře ohraničené.<br>Široký ústní otvor sahá až za oči.<br>Má tukovou ploutvičku.",
     "exam":"Wie unterscheiden sich Bach- und Seesaibling? -- Die bauchseitigen roten Flossen haben beim Bachsaibling einen weißen und schwarzen Streifen als Vorderrand, beim Seesaibling nur einen weißen Streifen.<br>Wo findet man bei einem männlichen Bachsaibling den Laichhaken? -- am Unterkiefer<br>Welche Fischarten waren ursprünglich in den bayerischen Gewässern nicht heimisch?  -- Bachsaibling und Regenbogenforelle",
     "czech_exam":"Jak se liší pstruh potoční a pstruh jezerní? -- Červené ploutve na spodní straně pstruha potočního mají na náběžné hraně bílý a černý pruh, zatímco pstruh jezerní má pouze bílý pruh. Kde se u samce pstruha potočního nachází háček na tření? -- Na spodní čelisti. Které druhy ryb původně nepocházely z bavorských vod? -- Pstruh potoční a pstruh duhový",
-    "schonzeit":"-<br>(01.10. - 15.03. regional)",
+    "schonzeit":"(01.10. - 15.03. regional)",
     "schonmass":"-",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Bachsaibling",
@@ -288,7 +288,7 @@ const data = [
     "features":"Hochrückig, seitlich zusammengedrückt, kleines endständiges Maul, Seitenlinie nur 5-6 Schuppen, blaugrüner Streifen von Schwanzwurzel bis Körpermitte, Männchen zur Laichzeit bunt schillernd",
     "czech_features":"Vysokozadý, z boku zploštělý, malá koncová tlamka, boční linie jen 5-6 šupin, modrozelený pruh od kořene ocasu až ke středu těla, samec během tření pestrý a zářivý",
     "exam":"Welche Fischarten haben unvollständige, bzw. verkürzte Seitenlinien? -- Moderlieschen und Bitterling<br>Welche Fischart legt ihre Eier mit Hilfe einer Legeröhre in Teichmuscheln ab? -- Bitterling<br>Ein Indikator für sauberes Wasser. Welche Fischart ist das? -- Bitterling<br>Schonzeit Bitterling? -- Ganzjährig geschützt",
-    "czech_exam":"Které druhy ryb mají neúplné postranní čáry?",
+    "czech_exam":"Které druhy ryb mají neúplné nebo zkrácené boční čáry? -- Slunka obecná a Hořavka duhová<br>Který druh ryby klade svá vajíčka pomocí kladélka do rybničních mušlí? -- Hořavka duhová<br>Indikátor čisté vody. O který druh ryby se jedná? -- Hořavka duhová<br>Období hájení Hořavka duhová? -- Celoročně chráněná",
     "schonzeit":"ganzjährig geschont",
     "schonmass":"–",
     "status":"gefährdet",
@@ -398,7 +398,7 @@ const data = [
   {
     "name":"Flussperlmuschel",
     "czech":"Perlorodka říční",
-    "also_called":"Bitterfisch, Maipiere oder Pfrille",
+    "also_called":"Flussmuschel, Teichmuschel",
     "czech_also_called":"Perlorodka říční",
     "systematics":"Familie: Margaritiferidae<br>Gattung: Margaritifera – Art: Flussperlmuschel (Margaritifera margaritifera)<br>Durchschnittliche Länge: max. 15 cm",
     "czech_systematics":"Rodina: Margaritiferidae<br>Rod: Margaritifera – Druh: Perlorodka říční (Margaritifera margaritifera)<br>Průměrná délka: max. 15 cm",
@@ -413,13 +413,15 @@ const data = [
     "wiki":"https://cs.wikipedia.org/wiki/Perlorodka_říční"
   },
   { "name":"Frauennerfling",
-    "czech":"Plotice lesklá",
+    "czech":"plotice lesklá",
     "also_called":"Pigo, Frauenfisch, Donaunerfling, Dörnling, Erfle",
-    "czech_also_called":"Plotice lesklá",
-    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische; Gattung: Rutilus; Art: Frauennerfling",
-    "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití; Rod: Rutilus; Druh: Plotice lesklá",
-    "features":"Langgestreckter, seitlich abgeflachter Körper; mit zunehmendem Alter hochrückig; großer Kopf mit leicht unterständigem Maul; große Schuppen mit dunklen Rändern, die ein Netzmuster bilden; metallisch bläulichgrüne Färbung; Bauch-, After- und Schwanzflossen rötlich bis orange; Männchen zur Laichzeit regenbogenfarbig schillernd mit Laichausschlag.",
-    "czech_features":"Protáhlé, bočně zploštělé tělo; vysokohřbetý s přibývajícím věkem; velká hlava s mírně poddimenzovanými ústy; velké šupiny s tmavými okraji tvořícími síťovaný vzor; metalické modrozelené zbarvení; Břišní, anální a ocasní ploutve načervenalé až oranžové; Během období tření má samec duhově zbarvený duhový vzhled s vyrážkou při tření.",
+    "czech_also_called":"plotice dunajská",
+    "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Rutilus – Art: Frauennerfling (Rutilus pigus virgo)<br>Durchschnittliche Länge: 20 – 45 cm, max. 60 cm<br>Laichzeit: April – Mai",
+    "czech_systematics":"Rodina: Kaprovití (Cyprinidae)<br>Rod: Rutilus – Druh: Ženský cejn (Rutilus pigus virgo)<br>Průměrná délka: 20 – 45 cm, max. 60 cm<br>Rozmnožovací období: duben – květen",
+    "features":"Besitzt einen gestreckten, etwas hochrückigen Körper mit großen Schuppen. Der Kopf ist auffallend klein mit unterständigem Maul. Der Körper ist metallisch bläulichgrün gefärbt, die Flossen sind gelbbräunlich bis rötlich. Der Frauennerfling kann leicht mit dem Nerfling oder dem Rotauge verwechselt werden.",
+    "czech_features":"Má protáhlé, poněkud vysoko hřbetní tělo s velkými šupinami. Hlava je nápadně malá s spodním ústním otvorem. Tělo má kovově modrozelenou barvu, ploutve jsou žluto hnědé až načervenalé. Plotice lesklá může být snadno zaměněna s Jelec jesen nebo červenookem.",
+    "exam":"Welche Fischarten sind in Bayern ursprünglich nur im Donaueinzugsgebiet heimisch? -- Huchen, Frauennerfling und Perlfisch<br>Wie ist die Stellung des Mauls beim Frauennerfling? -- unterständig<br>Welche Schonzeit hat der Frauennerfling? -- ganzjährig",
+    "czech_exam":"Které druhy ryb jsou v Bavorsku původně domácí pouze v povodí Dunaje? -- hlavatka obecná, plotice lesklá a plotice meidingerova<br>Jaký je postoj tlamy u plotice lesklá? -- spodní postavení<br>Jaká je ochranná doba plotice lesklá? -- celoročně",
     "schonzeit":"In Baden-Württemberg und Bayern ist der Fisch ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
@@ -431,10 +433,12 @@ const data = [
     "czech":"karas stříbřitý",
     "also_called":"Silberkarausche",
     "czech_also_called":"karas stříbřitý",
-    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
-    "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
-    "features":"Robust, tiefes Wasser, ähnelt dem Karpfen",
-    "czech_features":"Odolná ryba, hlubší vody, podobná kaprovi",
+    "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Carassius – Art: Giebel (Carassius auratus gibelio)<br>Durchschnittliche Länge: 15 – 25 cm, max. 45 cm<br>Laichzeit: Mai – Juli",
+    "czech_systematics":"Rodina: Kaprovití (Cyprinidae)<br>Rod: Carassius – Druh: Karas obecný (Carassius auratus gibelio)<br>Průměrná délka: 15 – 25 cm, max. 45 cm<br>Rozmnožování: květen – červenec",
+    "features":"Seitlich zusammengedrückten, leicht hochrückigen Körperbau.<br>Der Übergang vom Kopf zum Rücken macht einen deutlichen Knick.<br>Das endständige Maul trägt keine Barteln.<br>Verwechslungsgefahr besteht mit der Karausche. Im Gegensatz zu dieser ist der obere Rand der Rückenflosse eher gerade und der Schwanzstiel trägt keinen dunklen Fleck.",
+    "czech_features":"Postranně stlačená, mírně vysoko klenutá tělesná stavba.<br>Přechod z hlavy na záda tvoří zřetelný zlomek.<br>Koncová tlamka nenese vousky.<br>Existuje riziko záměny s karas obecný. Na rozdíl od něj je horní okraj hřbetní ploutve spíše rovný a u ocasního pochvu není tmavá skvrna.",
+    "exam":"Wie unterscheiden sich Giebel und Karpfen? -- Der Karpfen hat vier, der Giebel keine Barteln.<br>Giebel gehört zu welcher Familie? -- Karpfenfische<br>Schonzeit Giebel? -- Keine (ganzjährig befischt)",
+    "czech_exam":"Jak se liší karas stříbřitý a kapr? -- Kapr má čtyři vousky, karas stříbřitý žádné.<br>Do jaké čeledi patří karas stříbřitý? -- Kaprovití<br>Ochranná doba karas stříbřitý? -- Žádná (loví se celoročně)",
     "schonzeit":"–",
     "schonmass":"–",
     "status":"heimisch",
@@ -442,12 +446,12 @@ const data = [
     "wiki":"https://cs.wikipedia.org/wiki/Karas_st%C5%99%C3%ADb%C5%99it%C3%BD"
   },
   {
-    "name":"Groppe",
-    "czech":"vranka obecná",
-    "also_called":"Kaulkopf, Rotzkopf, Westgroppe, Koppe, Mühlkoppe, Dickkopf, Dolm, Scherwatz",
-    "czech_also_called":"vranka obecná",
-    "systematics":"Ordnung: Panzerwangen; Familie: Groppen; Gattung: Cottus; Art: Groppe",
-    "czech_systematics":"Řád: ostnoploutví; Čeleď: vrankovití; Rod: Cottus; Druh: vranka obecná",
+    "name":"Mühlkoppe",
+    "czech":"Vranka obecná",
+    "also_called":"<b>Groppe, Koppe</b>, Kaulkopf, Rotzkopf, Westgroppe, Dickkopf, Dolm, Scherwatz",
+    "czech_also_called":"Vranka obecná",
+    "systematics":"Familie: Groppen (Cottidae)<br>Gattung: Cottus – Art: Groppe (Cottus gobio)<br>Durchschnittliche Länge: 10 – 15 cm<br>Laichzeit: Februar – Mai",
+    "czech_systematics":"Čeleď: Bullhead (Cottidae)<br>Rod: Cottus – Druh: Bullhead (Cottus gobio)<br>Průměrná délka: 10 – 15 cm<br>Doba tření: únor – květen",
     "features":"Nachtaktiver Grundfisch, spindelartig, großer breiter Kopf, schuppenlose Haut, zurückgebildete Schwimmblase, 12-16 cm, Bauchflossen brustständig, getrennt",
     "czech_features":"Noční ryba dna, vřetenovitý tvar, velká široká hlava, kůže bez šupin, redukovaná plynová měchýř, 12-16 cm, břišní ploutve prsní, oddělené",
     "schonzeit":"ganzjährig geschont",
@@ -459,14 +463,14 @@ const data = [
   {
     "name":"Gründling",
     "czech":"Hrouzek obecný",
-    "also_called":"Gründel, Gressling, Kresse, Kressling, Kreßling",
+    "also_called":"Grundel, Gressling, Kresse, Kressling, Kreßling",
     "czech_also_called":"-",
     "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Gobio – Art: Gründling (Gobio gobio)<br>Durchschnittliche Länge: 10 – 15 cm, max. 20 cm<br>Laichzeit: Mai – Juni",
     "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Gobio – Druh: potočnice (Gobio gobio)<br>Průměrná délka: 10 – 15 cm, max. 20 cm<br>Rozmnožovací období: květen – červen",
     "features":"Kleine Maulspalte, zwei Barteln am Mund, Unterständiges Maul.<br>Grundfisch, besitzt einen spindelförmigen Körper mit relativ großen Schuppen. Der Milchner besitzt größere Brustflossen.<br>Ein wichtiges Erkennungsmerkmal ist das Längsband auf den Flanken, mit einer Reihe dunkel bis bläulich schimmernder, unregelmäßiger Flecken.",
     "czech_features":"Malý tlamní štěrbin, dvě vousky u úst, dolní tlam. <br>Spodní ryba, má vřetenovité tělo s relativně velkými šupinami. Samci mají větší prsní ploutve.<br>Důležitým rozpoznávacím znakem je podélný pás na bocích, s řadou tmavých až modravě lesklých, nepravidelných skvrn.",
     "exam":"Welche Fischart hat im Vergleich die kleinste Maulspalte? -- Gründling<br>Gründling ist ein typischer Fisch welcher Zone? -- Barbenzone / Forellenzone<br>Schonzeit Gründling? -- Keine (ganzjährig befischt)",
-    "czech_exam":"Jaký druh ryby má ve srovnání nejmenší tlamičku? -- Cejn<br>Cejn je typická ryba které zóny? -- Parmová zóna / Pstruhová zóna<br>Uzavírka lovu cejna? -- Žádná (lov povolen po celý rok)",
+    "czech_exam":"Jaký druh ryby má ve srovnání nejmenší tlamičku? -- Hrouzek obecný<br>Hrouzek obecný je typická ryba které zóny? -- Parmová zóna / Pstruhová zóna<br>Uzavírka lovu hrouzek obecný? -- Žádná (lov povolen po celý rok)",
     "schonzeit":"-",
     "schonmass":"–",
     "status":"heimisch",
@@ -786,7 +790,7 @@ const data = [
     "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
     "features":"Grünlich, widerstandsfähig, liebt Pflanzenzonen",
     "czech_features":"Zelenavá, odolná, vyhledává zarostlé oblasti",
-    "schonzeit":"01.05. - 30.06.",
+    "schonzeit":"01.05. - 30.06<br>(und 15.10. - 20.11. regional)",
     "schonmass":"33 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Schleie",
