@@ -587,21 +587,6 @@ const data = [
     "wiki":"https://cs.wikipedia.org/wiki/Ježdík_obecný"
   },
   {
-    "name":"Kleine Bodenrenke",
-    "czech":"coregon pidschian",
-    "also_called":"Kilch, Kropffelchen, Europäische Bodenrenke",
-    "czech_also_called":"coregon pidschian",
-    "systematics":"Ordnung: Lachsartige; Familie: Lachsfische; Gattung: Coregonus; Art: Kleine Bodenrenke",
-    "czech_systematics":"Řád: lososotvární; Čeleď: lososovití; Rod: Coregonus; Druh: coregon pidschian",
-    "features":"Langgestreckt, seitlich abgeflacht, unterständiges Maul, blaugrün bis bräunlich, Flanken und Bauch silbrig-weiß, 15-35 Reusendornen am ersten Kiemenbogen, große Augen",
-    "czech_features":"Protáhlé, bočně zploštělé tělo, spodní ústí, modrozelená až hnědá, boky a břicho stříbřitě bílé, 15-35 tyčinek na první žaberní klenbě, velké oči",
-    "schonzeit":"ganzjährig geschont",
-    "schonmass":"–",
-    "status":"gefährdet",
-    "description_link":"https://de.wikipedia.org/wiki/Kleine_Bodenrenke",
-    "wiki":"https://cs.wikipedia.org/wiki/Coregonus_pidschian"
-  },
-  {
     "name":"Maifisch",
     "czech":"Placka pomořanská",
     "also_called":"Alse, Alose",
@@ -692,6 +677,23 @@ const data = [
     "status":"stark gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Perlfisch",
     "wiki":"https://cs.wikipedia.org/wiki/Plotice_Meidingerova"
+  },
+  {
+    "name":"Renke",
+    "czech":"coregon pidschian",
+    "also_called":"Maräne, Felchen",
+    "czech_also_called":"coregon pidschian",
+    "systematics":"Familie: Coregonidae<br>Gattung: Coregonus<br>Durchschnittliche Länge: 25 – 45 cm, max. 70 cm<br>Laichzeit: November – Januar (Alpenseepopulation)",
+    "czech_systematics":"Rodina: Coregonidae<br>Rod: Coregonus<br>Průměrná délka: 25 – 45 cm, max. 70 cm<br>Rozmnožovací období: listopad – leden (populace alpských jezer)",
+    "features":"Merkmal dieser heringsähnlichen Fische ist die kleine Fettflosse.<br>Der Körper ist langgestreckt und seitlich zusammengedrückt.<br>Der Kopf ist klein mit je nach Ökotyp endständiger oder unterständiger Maulspalte.<br>Das Auge ist groß mit tropfenförmiger Pupille, deren Spitze nach vorne zeigt.<br>Die Schwanzflosse ist tief eingeschnitten.",
+    "czech_features":"Znaky těchto sleďovitých ryb jsou malá tuková ploutvička.<br>Tělo je protáhlé a na bocích zploštělé.<br>Hlava je malá s čelistní štěrbinou na konci nebo podústní v závislosti na ekotypu.<br>Oko je velké s kapkovitou zornicí, jejíž špička směřuje dopředu.<br>Ocasní ploutev je hluboce rozříznutá.",
+    "exam":"Welche Fischart hat am Rücken zwei Flossen? -- Renke (Felchen)<br>Welche Fische haben besonders lange und feine Kiemenreusendornen? -- Felchen-, Renkenartige (Coregoniden)<br>Welche Fischart hat eine kleine Fettflosse? -- Renke (Felchen)<br>Welche Fischart hat ein endständiges Maul? -- Renke (Felchen)<br>Welche Fischart hat eine tropfenförmige Pupille? -- Renke (Felchen)<br>Schonzeit Renke? -- ganzjährig",
+    "czech_exam":"Který druh ryby má na zádech dvě ploutve? -- Coregon pidschian (coregon pidschian)<br>Které ryby mají obzvláště dlouhé a jemné žaberní destičky? -- Coregoniden<br>Který druh ryby má malou tukovou ploutvičku? -- Coregon pidschian (coregon pidschian)<br>Který druh ryby má koncový ústní otvor? -- Coregon pidschian (coregon pidschian)<br>Který druh ryby má kapkovitou zornici? -- Coregon pidschian (coregon pidschian)<br>Období ochrany coregon pidschian? -- celoročně",
+    "schonzeit":"ganzjährig geschont",
+    "schonmass":"–",
+    "status":"gefährdet",
+    "description_link":"https://de.wikipedia.org/wiki/Kleine_Bodenrenke",
+    "wiki":"https://cs.wikipedia.org/wiki/Coregonus_pidschian"
   },
   {
     "name":"Regenbogenforelle",
@@ -957,7 +959,7 @@ const data = [
     "czech_systematics":"Řád: okounotvární; Čeleď: okounovití",
     "features":"Langer Räuber, klare Augen, beliebt beim Angeln",
     "czech_features":"Protáhlý dravec, ostrý zrak, oblíbený při rybolovu",
-    "schonzeit":"15.02. - 31.05., 15.10. - 20.11.",
+    "schonzeit":"15.02 - 30.04.<br>(15.02. - 31.05. regional)",
     "schonmass":"50 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Zander",
@@ -1076,13 +1078,13 @@ function renderCards(items){
     meta.className="meta";
     meta.innerHTML=`
       <div class="field"><strong>Auch genannt:</strong><br><span class="small"><b>${also}</b></span></div>
-      <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech || "–"}</b></span></div>
+      <div class="field"><strong>Také nazývaný:</strong><br><span class="small"><b>${it.czech || "–"}</b></span></div>
 
       <details class="detailsbox">
         <summary><strong>Systematik</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.systematics || ""}</span></div>
-          <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech_systematics || "–"}</b></span></div>
+          <div class="field"><strong>Systematika:</strong><br><span class="small"><b>${it.czech_systematics || "–"}</b></span></div>
         </div>
       </details>
 
@@ -1090,15 +1092,15 @@ function renderCards(items){
         <summary><strong>Merkmale</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.features || ""}</span></div>
-          <div class="field"><strong>čeština:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
+          <div class="field"><strong>Charakteristiky:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
         </div>
       </details>
 
       <details class="detailsbox">
-        <summary><strong>Prüfungsfragen</strong></summary>
+        <summary><strong>Typische Prüfungsfragen</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.exam || ""}</span></div>
-          <div class="field"><strong>čeština:</strong><br><strong>Zkušební otázky:</strong><br><span class="small"><b>${it.czech_exam || "–"}</b></span></div>
+          <div class="field"><strong>Typické zkušební otázky:</strong><br><span class="small"><b>${it.czech_exam || "–"}</b></span></div>
         </div>
       </details>
 
