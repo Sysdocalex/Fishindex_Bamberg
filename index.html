@@ -110,9 +110,11 @@ h1{margin:0;font-size:20px;font-weight:700}
     <option value="unbekannt">unbekannt</option>
   </select>
   <select id="sortBy">
-    <option value="Sortieren nach">Schonzeiten</option>
+    <option value="">Sortieren</option>
     <option value="name">Name A–Z</option>
     <option value="status">Status</option>
+    <option value="schonzeit">Schonzeit (Beginn)</option>
+    <option value="schonzeit-window">Schonzeit (Zeitraum)</option>
   </select>
 </div>
 
@@ -1113,6 +1115,37 @@ function renderCards(items){
     grid.appendChild(card);
   });
 }
+function getSchonzeitSortValue(value){
+  const windowData=getSchonzeitWindowData(value);
+  if(!windowData) return Number.POSITIVE_INFINITY;
+  return windowData.start;
+}
+
+function getSchonzeitWindowData(value){
+  if(!value) return null;
+  const cleaned=String(value)
+    .replace(/<[^>]*>/g," ")
+    .replace(/&nbsp;/gi," ")
+    .replace(/–/g,"-")
+    .replace(/\u00a0/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+  if(!cleaned || cleaned === "-" || cleaned.toLowerCase().includes("ganzjährig") || cleaned.toLowerCase().includes("keine schonzeit") || cleaned.toLowerCase().includes("keine")){
+    return null;
+  }
+  const dates=[...cleaned.matchAll(/(\d{1,2})\.\s*(\d{1,2})\./g)].map(match => {
+    const day=Number(match[1]);
+    const month=Number(match[2]);
+    return month * 100 + day;
+  });
+  if(!dates.length) return null;
+  return {
+    start: Math.min(...dates),
+    end: Math.max(...dates),
+    span: Math.max(...dates) - Math.min(...dates)
+  };
+}
+
 function applyFilters(){
   const term=document.getElementById("q").value.trim().toLowerCase();
   const status=document.getElementById("statusFilter").value.toLowerCase();
@@ -1123,6 +1156,23 @@ function applyFilters(){
   });
   if(sortBy==="name") filtered.sort((a,b)=>a.name.localeCompare(b.name,"de"));
   if(sortBy==="status") filtered.sort((a,b)=>a.status.localeCompare(b.status,"de"));
+  if(sortBy==="schonzeit") filtered.sort((a,b)=>{
+    const aValue=getSchonzeitSortValue(a.schonzeit);
+    const bValue=getSchonzeitSortValue(b.schonzeit);
+    if(aValue !== bValue) return aValue - bValue;
+    return (a.name || "").localeCompare(b.name || "","de");
+  });
+  if(sortBy==="schonzeit-window") filtered.sort((a,b)=>{
+    const aWindow=getSchonzeitWindowData(a.schonzeit);
+    const bWindow=getSchonzeitWindowData(b.schonzeit);
+    const aStart=aWindow ? aWindow.start : Number.POSITIVE_INFINITY;
+    const bStart=bWindow ? bWindow.start : Number.POSITIVE_INFINITY;
+    if(aStart !== bStart) return aStart - bStart;
+    const aEnd=aWindow ? aWindow.end : Number.POSITIVE_INFINITY;
+    const bEnd=bWindow ? bWindow.end : Number.POSITIVE_INFINITY;
+    if(aEnd !== bEnd) return aEnd - bEnd;
+    return (a.name || "").localeCompare(b.name || "","de");
+  });
   renderCards(filtered);
 }
 document.getElementById("q").addEventListener("input",applyFilters);
