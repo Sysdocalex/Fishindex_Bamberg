@@ -8,13 +8,11 @@ Includes study materials for the Bavarian fishing exam.
 
 Available in German and Czech.
 
-
 Eine interaktive Fisch-Enzyklopädie für die Region Bayern/Oberfranken/Bamberg (Fluss Regnitz) mit aktuellen Fangbestimmungen.
 
 Inklusive Lernmaterial für die Angelprüfung in Bayern.
 
 Auf deutsch und ins Tschechische übersetzt.
-
 
 Interaktivní rybářská encyklopedie pro oblast Bavorsko/Horní Franky/Bamberk (řeka Regnitz) s aktuálními předpisy pro rybolov.
 
