@@ -26,8 +26,8 @@ h1{margin:0;font-size:20px;font-weight:700}
 .small{font-size:13px;color:var(--muted)}
 .meta{display:flex;flex-direction:column;gap:10px}
 .badge{padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-.status.heimisch{background:var(--heimisch);color:#06992a}.status.gefährdet{background:var(--gef);color:#f7e333}.status.ausgestorben{background:var(--ausg);color:#e64343}.status.unbekannt{background:var(--unk)}
-.field{font-size:13px;color:rgb(2, 128, 44);line-height:1.5}
+.status.heimisch{background:var(--heimisch);color:#06992a}.status.gefährdet{background:var(--gef);color:#dbc501}.status.ausgestorben{background:var(--ausg);color:#e64343}.status.unbekannt{background:var(--unk)}
+.field{font-size:13px;color:rgb(1, 105, 36);line-height:1.5}
 .field strong{font-weight:700}
 .link{color:var(--accent);text-decoration:none;word-break:break-word}
 .footer{padding:14px 18px;color:#445;font-size:13px}
@@ -270,8 +270,8 @@ const data = [
     "czech":"parma obecná",
     "also_called":"Flussbarbe, Barbel, Pigge",
     "czech_also_called":"říční parma",
-    "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Barbus – Art: Flussbarbe (Barbus barbus)<br>Durchschnittliche Länge: 30 – 70 cm, max. 90 cm<>Laichzeit: Mai – Juli",
-    "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Barbus – Druh: Parma obecná (Barbus barbus)<br>Průměrná délka: 30 – 70 cm, max. 90 cm<>Doba tření: květen – červenec",
+    "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Barbus – Art: Flussbarbe (Barbus barbus)<br>Durchschnittliche Länge: 30 – 70 cm, max. 90 cm<br>Laichzeit: Mai – Juli",
+    "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Barbus – Druh: Parma obecná (Barbus barbus)<br>Průměrná délka: 30 – 70 cm, max. 90 cm<br>Doba tření: květen – červenec",
     "features":"Vier Barteln am Oberkiefer<br>Walzenförmiger Körper<br>Unterständiges Saugmaul mit wulstige Lippen<br>Große Schuppen",
     "czech_features":"Čtyři vousky na horní čelisti<br>Válečkovi tělo<br>Spodní ústní otvor s plné rty<br>Velké šupiny",
     "exam":"Welche Fischart hat hornige Lippen mit kantigen Rändern? -- Barbe<br>Wie viele Barteln hat die Barbe? -- Vier<br>Schonzeit Barbe? -- 01.05. - 30.06., Mindestmaß 40 cm<br>Wie ist die Stellung des Mauls bei der Barbe? -- Unterständig",
@@ -289,8 +289,8 @@ const data = [
     "czech_also_called":"hořavka duhová",
     "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Rhodeus – Art: Bitterling (Rhodeus sericeus amarus)<br>Durchschnittliche Länge: 5 – 7 cm, max. 9 cm<br>Laichzeit: April – Juni",
     "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Rhodeus – Druh: Hořavka duhová (Rhodeus sericeus amarus)<br>Průměrná délka: 5 – 7 cm, max. 9 cm<br>Doba tření: duben – červen",
-    "features":"Hochrückig, seitlich zusammengedrückt, kleines endständiges Maul, Seitenlinie nur 5-6 Schuppen, blaugrüner Streifen von Schwanzwurzel bis Körpermitte, Männchen zur Laichzeit bunt schillernd",
-    "czech_features":"Vysokozadý, z boku zploštělý, malá koncová tlamka, boční linie jen 5-6 šupin, modrozelený pruh od kořene ocasu až ke středu těla, samec během tření pestrý a zářivý",
+    "features":"Hochrückig, seitlich zusammengedrückt<br>Kleines endständiges Maul<br>Seitenlinie nur 5-6 Schuppen<br>Blaugrüner Streifen von Schwanzwurzel bis Körpermitte<br>Männchen zur Laichzeit bunt schillernd",
+    "czech_features":"Vysokozadý, z boku zploštělý, malá koncová tlamka<br>Boční linie jen 5-6 šupin<br>Modrozelený pruh od kořene ocasu až ke středu těla<br>Samec během tření pestrý a zářivý",
     "exam":"Welche Fischarten haben unvollständige, bzw. verkürzte Seitenlinien? -- Moderlieschen und Bitterling<br>Welche Fischart legt ihre Eier mit Hilfe einer Legeröhre in Teichmuscheln ab? -- Bitterling<br>Ein Indikator für sauberes Wasser. Welche Fischart ist das? -- Bitterling<br>Schonzeit Bitterling? -- Ganzjährig geschützt",
     "czech_exam":"Které druhy ryb mají neúplné nebo zkrácené boční čáry? -- Slunka obecná (Moderlieschen) a hořavka duhová (Bitterling)<br>Který druh ryby klade svá vajíčka pomocí kladélka do rybničních mušlí? -- Hořavka duhová (Bitterling)<br>Indikátor čisté vody. O který druh ryby se jedná? -- Hořavka duhová (Bitterling)<br>Období hájení Hořavka duhová(Bitterling)? -- Celoročně chráněná",
     "schonzeit":"ganzjährig geschont",
@@ -306,8 +306,8 @@ const data = [
     "czech_also_called":"cejn velký",
     "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Brassen (Abramis) – Art: Brachse (Abramis brama)<br>Durchschnittliche Länge: 30 – 50 cm; Max: 70 cm<br>Laichzeit: Mai – Juni",
     "czech_systematics":"Rodina: Kaprovití (Cyprinidae)<br>Rod: cejni (Brassen) (Abramis) – Druh: cejn velký (Brachse) (Abramis brama)<br>Průměrná délka: 30 – 50 cm; Max: 70 cm<br>Rozmnožovací období: květen – červen",
-    "features":"Hochrückig, silbrig glänzend<br>Sehr kleine Schuppen<>brAfterflosse lang und sichelförmig<br>Endständiges Maul",
-    "czech_features":"Vysoký hřbet, stříbrně lesklý<br>Velmi malé šupiny<>brZadní ploutev dlouhá a srpkovitá<br>Koncovitá tlam",
+    "features":"Hochrückig, silbrig glänzend<br>Sehr kleine Schuppen<br>Afterflosse lang und sichelförmig<br>Endständiges Maul",
+    "czech_features":"Vysoký hřbet, stříbrně lesklý<br>Velmi malé šupiny<br>Zadní ploutev dlouhá a srpkovitá<br>Koncovitá tlam",
     "exam":"Welche Fischart ist hochrückig und silbrig? -- Brachse<br>Unterschied Brachse vs. Güster? -- Brachse höher, Güster schlanker<br>Schonzeit Brachse? -- Keine (ganzjährig befischt)",
     "czech_exam":"Který druh ryby má vysoká záda a je stříbrný? -- cejn velký (Brachse)<br>Rozdíl mezi cejn velký (Brachse) a Cejnek malý (Güster)? -- cejn velký (Brachse) vyšší, Cejnek malý (Güster) štíhlejší<br>Období hájení cejn velký (Brachse)? -- žádné (lov celoročně)",
     "schonzeit":"–",
@@ -460,7 +460,7 @@ const data = [
     "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Gobio – Druh: Hrouzek obecný (Gründling) (Gobio gobio)<br>Průměrná délka: 10 – 15 cm, max. 20 cm<br>Rozmnožovací období: květen – červen",
     "features":"Kleine Maulspalte, zwei Barteln am Mund, Unterständiges Maul.<br>Grundfisch, besitzt einen spindelförmigen Körper mit relativ großen Schuppen. Der Milchner besitzt größere Brustflossen.<br>Ein wichtiges Erkennungsmerkmal ist das Längsband auf den Flanken, mit einer Reihe dunkel bis bläulich schimmernder, unregelmäßiger Flecken.",
     "czech_features":"Malý tlamní štěrbin, dvě vousky u úst, dolní tlam. <br>Spodní ryba, má vřetenovité tělo s relativně velkými šupinami. Samci mají větší prsní ploutve.<br>Důležitým rozpoznávacím znakem je podélný pás na bocích, s řadou tmavých až modravě lesklých, nepravidelných skvrn.",
-    "exam":"Welche Fischart hat im Vergleich die kleinste Maulspalte? -- Gründling<br>Gründling ist ein typischer Fisch welcher Zone? -- Barbenzone / Forellenzone<br>Schonzeit Gründling? -- Keine (ganzjährig befischt)",
+    "exam":"Welche Fischart hat im Vergleich die kleinste Maulspalte? -- Gründling<br>Gründling ist ein typischer Fisch welcher Zone? -- Barbenzone / Forellenzone<br>Wie unterscheiden Sie eine einsömmerige Barbe (Jungbarbe) von einem Gründling? -- Die Barbe hat vier, der Gründling zwei Barteln.",
     "czech_exam":"Jaký druh ryby má ve srovnání nejmenší tlamičku? -- Hrouzek obecný (Gründling)<br>Hrouzek obecný (Gründling) je typická ryba které zóny? -- Parmová zóna (Barbenzone) / Pstruhová zóna (Forellenzone)<br>Uzavírka lovu hrouzek obecný? -- Žádná (lov povolen po celý rok)",
     "schonzeit":"-",
     "schonmass":"–",
