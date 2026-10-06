@@ -7,7 +7,7 @@
 <style>
 :root{
   --bg:#f3fbff; --card:#ffffff; --accent:#0f6c8f; --muted:#556;
-  --heimisch:#d9f7be; --gef:#fff1b8; --ausg:#ffccc7; --unk:#f0f0f0;
+  --heimisch:#87fc20; --gef:#d4cb46; --ausg:#f56356; --unk:#f0f0f0;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#123}
@@ -26,7 +26,7 @@ h1{margin:0;font-size:20px;font-weight:700}
 .small{font-size:13px;color:var(--muted)}
 .meta{display:flex;flex-direction:column;gap:10px}
 .badge{padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-.status.heimisch{background:var(--heimisch);color:#06992a}.status.gefährdet{background:var(--gef);color:#dbc501}.status.ausgestorben{background:var(--ausg);color:#e64343}.status.unbekannt{background:var(--unk)}
+.status.heimisch{background:var(--heimisch);color:#024d14}.status.gefährdet{background:var(--gef);color:#776b02}.status.ausgestorben{background:var(--ausg);color:#f50101}.status.unbekannt{background:var(--unk)}
 .field{font-size:13px;color:rgb(1, 105, 36);line-height:1.5}
 .field strong{font-weight:700}
 .link{color:var(--accent);text-decoration:none;word-break:break-word}
@@ -774,13 +774,15 @@ const data = [
   },
   {
     "name":"Rotauge",
-    "czech":"plotice obecná",
+    "czech":"Plotice obecná",
     "also_called":"Plötze, Unechte Rotfeder, Schwal",
-    "czech_also_called":"plotice obecná",
-    "systematics":"Ordnung: Karpfenartige; Unterordnung: Karpfenfischähnliche; Familie: Weißfische; Gattung: Rutilus; Art: Rotauge",
-    "czech_systematics":"Řád: kaprotvární; Podřád: kaprovec; Čeleď: střevličkovití; Rod: Rutilus; Druh: plotice obecná",
-    "features":"Hochrückiger bis schlanker Körper je nach Gewässer, leuchtend rote Iris, endständiges Maul, rötliche Flossen, friedlicher Schwarmfisch",
-    "czech_features":"Tělo vysoké až štíhlejší podle vody, výrazně červená duhovka, koncová tlama, načervenalé ploutve, hejnová ryba",
+    "czech_also_called":"Plotice obecná",
+    "systematics":"Ordnung: Karpfenartige<br>Unterordnung: Karpfenfischähnliche<br>Familie: Weißfische<br>Gattung: Rutilus; Art: Rotauge",
+    "czech_systematics":"Řád: kaprotvární<br>Podřád: kaprovec<br>Čeleď: střevličkovití<br>Rod: Rutilus; Druh: plotice obecná",
+    "features":"Hochrückiger bis schlanker Körper je nach Gewässer<br>Leuchtend rote Iris<br>Endständiges Maul<br>Rötliche Flossen<br>Friedlicher Schwarmfisch",
+    "czech_features":"Tělo vysoké až štíhlejší podle vody<br>Výrazně červená duhovka, koncová tlama<br>Načervenalé ploutve<br>Hejnová ryba",
+    "exam":"Welche Flossenstellung ist für das Rotauge kennzeichnend? -- Die Rückenflosse beginnt senkrecht über dem Ansatz der Bauchflossen.<br>Welche Fischart hat rötliche Flossen? -- Rotauge<br>Welche Fischart ist ein friedlicher Schwarmfisch? -- Rotauge<br>Welche Fischarten leben hauptsächlich in der  Brachsenregion? -- Rotauge und Schleie",
+    "czech_exam":"Které postavení ploutví je charakteristické pro cejna? -- Hřbetní ploutev začíná přímo nad začátkem břišních ploutví.<br>Který druh ryby má načervenalé ploutve? -- Cejn<br>Který druh ryby je mírumilovná hejnová ryba? -- Stříbrný cejn<br>Které druhy ryb žijí převážně v oblasti cejna? -- Plotice cejn a lín",
     "schonzeit":"15.10. - 20.11.",
     "schonmass":"–",
     "status":"heimisch",
@@ -789,13 +791,14 @@ const data = [
   },
   {
     "name":"Rotfeder",
-    "czech":"perlín ostrobřichý",
+    "czech":"Perlín ostrobřichý",
     "also_called":"Unechtes Rotauge, Rötel, Rotblei",
-    "czech_also_called":"perlín ostrobřichý",
-    "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
-    "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
-    "features":"Rötliche Flossen, friedlich, in pflanzenreichen Gewässern",
-    "czech_features":"Načervenalé ploutve, mírumilovná, v zarostlých vodách",
+    "czech_also_called":"Perlín ostrobřichý",
+    "systematics":"Familie: Karpfenfische (Cyprinidae)<br>Gattung: Scardinius – Art: Rotfeder (Scardinius erythrophthalmus)<br>Durchschnittliche Länge: 20 – 30 cm<br>Laichzeit: April – Mai",
+    "czech_systematics":"Rodina: Kaprovité ryby (Cyprinidae)<br>Rod: Scardinius – Druh: Ouklejka pruhovaná (Scardinius erythrophthalmus)<br>Průměrná délka: 20 – 30 cm<br>Rozmnožovací období: duben – květen",
+    "features":"Besitzt einen hochrückigen, kompakten Körper.<br>Das Maul ist deutlich oberständig mit schräg nach oben stehender Maulspalte.<br>Die Iris ist mehr oder weniger gelblich.<br>Die Rückenflosse beginnt im Gegensatz zum Rotauge deutlich hinter dem Bauchflossenansatz.<br>Die Flossen sind hellrot bis kräftig rot gefärbt.<br>Die großen Schuppen bilden an der Bauchseite zwischen Bauch- und Afterflosse einen dachziegelartigen Kiel.",
+    "czech_features":"Má vysoce hřbetní, kompaktní tělo.<br>Čelisti jsou výrazně horní s šikmo směrem vzhůru stojící štěrbinou úst.<br>Iris je více či méně žlutý.<br>Záďová ploutev začíná na rozdíl od střevle výrazně za základem břišní ploutve.<br>Ploutve jsou světle červené až tmavě červené.<br>Velké šupiny tvoří na břišní straně mezi břišní a řitní ploutví střešníkovitý kýl",
+    "exam":"Wie unterscheidet man Rotfeder und Rotauge? -- Bei der Rotfeder beginnt der Ansatz der Rückenflosse deutlich hinter dem Ansatz der Bauchflossen.<br>",
     "schonzeit":"Ganzjährig, Fangverbot in Flüssen",
     "schonmass":"–",
     "status":"gefährdet",
@@ -819,7 +822,7 @@ const data = [
   },
   {
     "name":"Rutte",
-    "czech":"mník jednovousý",
+    "czech":"Mník jednovousý",
     "also_called":"Quappe, Trüsche, Trische, Treische, Ruppe, Aalrutte, Aalquappe, Aalraupe, Quappaal",
     "czech_also_called":"mník jednovousý",
     "systematics":"Klasse: Strahlenflosser; Ordnung: Dorschartige; Familie: Quappen; Gattung: Lota; Art: Quappe",
@@ -834,13 +837,15 @@ const data = [
   },
   {
     "name":"Schleie",
-    "czech":"lín obecný",
+    "czech":"Lín obecný",
     "also_called":"Schlei",
     "czech_also_called":"lín obecný",
     "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische",
     "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
     "features":"Grünlich, widerstandsfähig, liebt Pflanzenzonen",
     "czech_features":"Zelenavá, odolná, vyhledává zarostlé oblasti",
+    "exam":"Bei welchen Fischarten ist die Bestimmung des Geschlechts anhand ihrer Flossen möglich? -- Schleie und Äsche<br>Welche Fischart ist besonders widerstandsfähig und kann auch in stark verschmutzten Gewässern überleben? -- Schleie<br>Welche Fischarten haben keinen Magen? -- Schleie und Rotauge",
+    "czech_exam":"U kterých druhů ryb je možné určit pohlaví podle jejich ploutví? -- Lín (Schleie) a Lipan (Äsche)<br>Který druh ryby je obzvlášť odolný a může přežít i ve silně znečištěných vodách? -- Lín (Schleie)<br>",
     "schonzeit":"01.05. - 30.06<br>(+ 15.10. - 20.11. regional)",
     "schonmass":"33 cm",
     "status":"heimisch",
@@ -881,7 +886,7 @@ const data = [
   },
   {
     "name":"Schrätzer",
-    "czech":"dJeždík žlutý",
+    "czech":"DJeždík žlutý",
     "also_called":"Schratz, Schraetzer",
     "czech_also_called":"Ježdík žlutý",
     "systematics":"Ordnung: Barschartige; Familie: Echte Barsche; Gattung: Gymnocephalus; Art: Schrätzer",
@@ -911,7 +916,7 @@ const data = [
   },
   {
     "name":"Steinbeißer",
-    "czech":"mřenka mramorovaná",
+    "czech":"Mřenka mramorovaná",
     "also_called":"Dorngrundel",
     "czech_also_called":"mřenka mramorovaná",
     "systematics":"Ordnung: Karpfenartige; Familie: Schmerlen; Gattung: Cobitis; Art: Steinbeißer",
@@ -956,9 +961,9 @@ const data = [
   },
   {
     "name":"Strömer",
-    "czech":"střevle potoční",
+    "czech":"Střevle potoční",
     "also_called":"Rißling, Telestes souffia",
-    "czech_also_called":"střevle potoční",
+    "czech_also_called":"Střevle potoční",
     "systematics":"Ordnung: Karpfenartige; Familie: Karpfenfische; Gattung: Telestes; Art: Strömer",
     "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití; Rod: Telestes; Druh: střevle potoční",
     "features":"Schlank, silbrig, orangefarbene Bauchflossen zur Laichzeit, schwarzer Längsstreifen, charakteristisch für Donau-Einzugsgebiet",
@@ -971,7 +976,7 @@ const data = [
   },
   {
     "name":"Wels",
-    "czech":"sumec velký",
+    "czech":"Sumec velký",
     "also_called":"Europäischer Wels, Waller, Schaidfisch",
     "czech_also_called":"sumec velký",
     "systematics":"Ordnung: Welsartige; Familie: Echte Welse",
@@ -986,7 +991,7 @@ const data = [
   },
   {
     "name":"Zander",
-    "czech":"candát obecný",
+    "czech":"Candát obecný",
     "also_called":"Sander, Schill, Hechtbarsch, Zahnmaul, Fogosch",
     "czech_also_called":"candát obecný",
     "systematics":"Ordnung: Barschartige; Familie: Echte Barsche",
@@ -999,21 +1004,6 @@ const data = [
     "description_link":"https://de.wikipedia.org/wiki/Zander",
     "wiki":"https://cs.wikipedia.org/wiki/Cand%C3%A1t_obecn%C3%BD"
   },
-  {
-	  "name":"Ziege",
-	  "czech":"Ostrucha křivočará",
-	  "also_called":"Sichling, Sabre Carp, Pelecus cultratus",
-	  "czech_also_called":"Ostrucha křivočará",
-	  "systematics":"Ordnung: Karpfenartige; Familie: Weißfische; Gattung: Pelecus; Art: Ziege",
-	  "czech_systematics":"Řád: kaprotvární; Čeleď: bílicovití; Rod: Pelecus; Druh: sekavec písečný",
-	  "features":"Seitlich stark abgeflacht, säbelförmig gebogen, oberständiges Maul, silbrig, charakteristisch für Donau-Einzugsgebiet",
-	  "czech_features":"Silně bočně zploštělé, tvaru šavle, svrchní ústí, stříbřitý, charakteristický pro povodí Dunaje",
-	  "schonzeit":"ganzjährig geschont",
-	  "schonmass":"–",
-	  "status":"gefährdet",
-	  "description_link":"https://de.wikipedia.org/wiki/Ziege_(Fisch)",
-	  "wiki":"https://cs.wikipedia.org/wiki/Pelecus_cultratus"
-	},
 	{
 	  "name":"Zingel",
 	  "czech":"Drsek větší",
