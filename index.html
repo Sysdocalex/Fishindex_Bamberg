@@ -26,8 +26,8 @@ h1{margin:0;font-size:20px;font-weight:700}
 .small{font-size:13px;color:var(--muted)}
 .meta{display:flex;flex-direction:column;gap:10px}
 .badge{padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-.status.heimisch{background:var(--heimisch)}.status.gefährdet{background:var(--gef)}.status.ausgestorben{background:var(--ausg)}.status.unbekannt{background:var(--unk)}
-.field{font-size:13px;color:#253;line-height:1.5}
+.status.heimisch{background:var(--heimisch);color:#06992a}.status.gefährdet{background:var(--gef);color:#f7e333}.status.ausgestorben{background:var(--ausg);color:#e64343}.status.unbekannt{background:var(--unk)}
+.field{font-size:13px;color:rgb(2, 128, 44);line-height:1.5}
 .field strong{font-weight:700}
 .link{color:var(--accent);text-decoration:none;word-break:break-word}
 .footer{padding:14px 18px;color:#445;font-size:13px}
@@ -219,12 +219,12 @@ const data = [
     "czech":"Mihule potoční",
     "also_called":"Staibiisser, Pricke, Donau-Neunauge, Flussneunauge, Meerneunauge",
     "czech_also_called":"minoha potoční",
-    "systematics":"Klasse: Rundmäuler; Ordnung: Neunaugenartige; Familie: Neunaugen (Petromyzontidae); Gattung: Lampetra; Art: Bachneunauge",
-    "czech_systematics":"Třída: kruhoústí; Řád: mihulovci; Čeleď: mihulovití (Petromyzontidae); Rod: Lampetra; Druh: mihule potoční",
-    "features":"Aalähnlicher, schuppenloser Körper; rundes Saugmaul; sieben Kiemenöffnungen hinter dem Auge; keine paarigen Flossen; zwei aneinander stoßende Rückenflossen; dunkelblau bis grünlicher Rücken, helle Flanken und weißer Bauch.",
-    "czech_features":"Úhořovitě podobné, bezšupinaté tělo; kulatá sací tlama; sedm žaberních otvorů za okem; žádné párové ploutve; dvě sousedící hřbetní ploutve; tmavě modrá až zelenavá záda, světlé boky a břicho bílé barvy.",
+    "systematics":"Klasse: Rundmäuler; Ordnung: Neunaugenartige<br>Familie: Neunaugen (Petromyzontidae)<br>Gattung: Lampetra; Art: Bachneunauge",
+    "czech_systematics":"Třída: kruhoústí; Řád: mihulovci<br>Čeleď: mihulovití (Petromyzontidae)<br>Rod: Lampetra; Druh: mihule potoční",
+    "features":"Aalähnlicher, schuppenloser Körper; rundes Saugmaul<br>Sieben Kiemenöffnungen hinter dem Auge<br>Keine paarigen Flossen<br>Zwei aneinander stoßende Rückenflossen",
+    "czech_features":"Úhořovitě podobné, bezšupinaté tělo; kulatá sací tlama<br>Sedm žaberních otvorů za okem<br>Žádné párové ploutve<br>Dvě sousedící hřbetní ploutve",
     "exam":"Welche Tierart hat eine unpaare Riechgrube? -- Bachneunauge<br>Welche Tierarten haben unpaare Eierstöcke? -- Flussbarsch und Bachneunauge<br>Welche Tierart verbringt alle Entwicklungsstadien im Süßwasser? -- Bachneunauge",
-    "czech_exam":"Který živočišný druh má jednu čichovou jamku? -- Mihule potoční<br>Které živočišné druhy mají jeden vaječník? -- okoun říční (Flussbarsch) a mihule potoční (Bachneunauge)<br>Který živočišný druh tráví všechna svá vývojová stádia ve sladké vodě? -- Mihule potoční (Bachneunauge)",
+    "czech_exam":"Který živočišný druh má jednu čichovou jamku? -- Mihule potoční (Bachneunauge)<br>Které živočišné druhy mají jeden vaječník? -- okoun říční (Flussbarsch) a mihule potoční (Bachneunauge)<br>Který živočišný druh tráví všechna svá vývojová stádia ve sladké vodě? -- Mihule potoční (Bachneunauge)",
     "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
@@ -233,15 +233,15 @@ const data = [
   },
   {
     "name":"Bachsaibling",
-    "czech":"siven americký",
+    "czech":"Siven americký",
     "also_called":"Saibling",
-    "czech_also_called":"siven alpský",
+    "czech_also_called":"Siven alpský",
     "systematics":"Familie: Forellenfische (Salmonidae)<br>Gattung: Saiblinge (Salvelinus) – Art: Bachsaibling (Salvelinus fontinalis)<br>Durchschnittliche Länge: 20 – 40 cm<br>Laichzeit: Oktober – Dezember",
     "czech_systematics":"Rodina: Pstruhovité ryby (Salmonidae)<br>Rod: Siven (Salvelinus) – Druh: Siven americký (Salvelinus fontinalis)<br>Průměrná délka: 20 – 40 cm<br>Doba tření: říjen – prosinec",
     "features":"Torpedoförmiger, kräftiger Körper. Der Rücken ist oliv bis braungrün gefärbt ebenso wie die Rückenflosse mit hellen Marmorierungen.<br>Auf den Flanken sind gelbliche und rote Punkte, die oft blau umrandet sind.<br>Die weite Maulspalte reicht bis hinter die Augen.<br>Er besitzt eine Fettflosse.",
     "czech_features":"torpédovitě tvarované, robustní tělo. Hřbet je olivový až hnědozelený, stejně jako hřbetní ploutev s jasnými mramorovými vzory.<br>Na bocích jsou žlutavé a červené tečky, často modře ohraničené.<br>Široký ústní otvor sahá až za oči.<br>Má tukovou ploutvičku.",
     "exam":"Wie unterscheiden sich Bach- und Seesaibling? -- Die bauchseitigen roten Flossen haben beim Bachsaibling einen weißen und schwarzen Streifen als Vorderrand, beim Seesaibling nur einen weißen Streifen.<br>Wo findet man bei einem männlichen Bachsaibling den Laichhaken? -- am Unterkiefer<br>Welche Fischarten waren ursprünglich in den bayerischen Gewässern nicht heimisch?  -- Bachsaibling und Regenbogenforelle",
-    "czech_exam":"Jak se liší pstruh potoční (Bach-) a pstruh jezerní (Seesaibling)? -- Červené ploutve na spodní straně siven americký (Bachsaibling) potočního mají na náběžné hraně bílý a černý pruh, zatímco pstruh jezerní (Seesaibling) má pouze bílý pruh.<br>Kde se u samce siven americký nachází háček na tření? -- Na spodní čelisti.<br>Které druhy ryb původně nepocházely z bavorských vod? -- siven americký (Bachsaibling) a pstruh duhový (Regenbogenforelle)",
+    "czech_exam":"Jak se liší siven americký (Bach-) a siven jazerni (Seesaibling)? -- Červené ploutve na spodní straně siven americký (Bachsaibling) potočního mají na náběžné hraně bílý a černý pruh, zatímco siven jezerní (Seesaibling) má pouze bílý pruh.<br>Kde se u samce siven americký nachází háček na tření? -- Na spodní čelisti.<br>Které druhy ryb původně nepocházely z bavorských vod? -- siven americký (Bachsaibling) a pstruh duhový (Regenbogenforelle)",
     "schonzeit":"(01.10. - 15.03. regional)",
     "schonmass":"-",
     "status":"heimisch",
@@ -257,7 +257,7 @@ const data = [
     "czech_systematics":"Rodina: ploskohlavci (Balitoridae)<br>Rod: Barbatula – Druh: mřenka mramorovaná (Noemacheilus barbatulus)<br>Průměrná délka: 8 – 12 cm, samci dorůstají větší.<br>Do období: březen – květen",
     "features":"Bodenfisch, klein, lebt in sauberem Wasser.<br>Walzenförmiger, langgestreckter Körper, der nur im Schwanzteil seitlich etwas zusammengedrückt ist.<br>Der Kopf ist abgeflacht mit unterständigem Maul.<br>Am Oberkiefer sitzen sechs Barteln. Die vordere Nasenöffnung ist röhrenförmig verlängert.<br>Besitzt sehr kleine Schuppen. Die Seitenlinie ist hell abgehoben und somit deutlich erkennbar",
     "czech_features":"Dnová ryba, malá, žije v čisté vodě.<br>Válečkovité, protáhlé tělo, které je jen v oblasti ocasu po stranách mírně zploštělé.<br>Hlava je zploštělá s spodní tlamou.<br>Na horní čelisti sedí šest vousků. Přední nosní otvor je trubkovitě prodloužen.<br>Má velmi malé šupiny. Postranní linie je světlá a tudíž dobře viditelná.",
-    "exam":"Welche Fischart gehört zu den Schmerlenartigen (Cobitiden)? -- Schlammpeitzger",
+    "exam":"Welche Fischart gehört zu den Schmerlenartigen (Cpstrobitiden)? -- Schlammpeitzger",
     "czech_exam":"Který druh ryby patří mezi sekavcovití (Cobitida)? -- Piskoř pruhovaný",
     "schonzeit":"–",
     "schonmass":"–",
@@ -361,7 +361,7 @@ const data = [
     "czech_features":"Má silné nůžky s horní stranou zdrsněnou zrnitým povrchem a žlutými zoubkovými hrbolky.<br>Spodní část je většinou zbarvena krvavě červeně.<br>Nad okem má dvoudílný čelní hřeben.<br>Šlechtické raci mohou dorůst až do délky 18 cm (od špičky hlavy po konec ocasu) při hmotnosti 200 g a více.<br>Samice zůstávají výrazně menší (asi 12-15 cm)",
     "exam":"Woran erkennt man den männlichen Edelkrebs? -- an den Griffelbeinpaaren<br>Was versteht man unter einem Butterkrebs? -- einen frisch gehäuteten Krebs<br>Was ist für den Steinkrebs kennzeichnend? -- er bleibt klein und hat einen schmutzig weißen Bauch, eine dunkle Oberseite und dunkle Scheren<br>Welche Schonzeit hat der männliche Edelkrebs? -- er hat keine gesetzliche Schonzeit",
     "czech_exam":"Jak poznáte samce raka rak říční (Edelkrebs)? -- podle párů pinzetních nohou<br>Co se rozumí pod pojmem máslový rak? -- čerstvě svléknutý rak<br>Co je typické pro rak kamenáč (Steinkrebs)? -- zůstává malý a má špinavě bílý břicho, tmavou hřbetní část a tmavé klepeta<br>Jaká je doba ochrany samce rak říční? -- nemá zákonnou dobu ochrany",
-    "schonzeit":"<b>männliche:</b> keine Schonzeit (01.10 - 31.07. regional)<br><b>weibliche:</b> 01.10. – 31.07.",
+    "schonzeit":"<b>männliche:</b> keine Schonzeit<br>(01.10 - 31.07. regional)<br><b>weibliche:</b> 01.10. – 31.07.",
     "schonmass":"12 cm<br>(15 cm regional)",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Edelkrebs",
@@ -742,15 +742,15 @@ const data = [
   },
   {
     "name":"Regenbogenforelle",
-    "czech":"pstruh duhový",
+    "czech":"Pstruh duhový",
     "also_called":"Regenbogenforelle",
-    "czech_also_called":"pstruh duhový",
+    "czech_also_called":"Pstruh duhový",
     "systematics":"Ordnung: Lachsartige; Familie: Lachsfische",
     "czech_systematics":"Řád: lososotvární; Čeleď: lososovití",
     "features":"Gefleckt, eingeführte Art, beliebt in Forellengewässern",
     "czech_features":"Skvrnitá, nepůvodní druh, oblíbená v pstruhových vodách",
-    "schonzeit":"15.12. - 15.03.<br>01.10. - 15.03. regional",
-    "schonmass":"26 cm<br>33 cm regional",
+    "schonzeit":"15.12. - 15.03.<br>(01.10. - 15.03. regional)",
+    "schonmass":"26 cm<br>(33 cm regional)",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Regenbogenforelle",
     "wiki":"https://cs.wikipedia.org/wiki/Pstruh_duhov%C3%BD"
@@ -841,7 +841,7 @@ const data = [
     "czech_systematics":"Řád: kaprotvární; Čeleď: kaprovití",
     "features":"Grünlich, widerstandsfähig, liebt Pflanzenzonen",
     "czech_features":"Zelenavá, odolná, vyhledává zarostlé oblasti",
-    "schonzeit":"01.05. - 30.06<br>(und 15.10. - 20.11. regional)",
+    "schonzeit":"01.05. - 30.06<br>(+ 15.10. - 20.11. regional)",
     "schonmass":"33 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Schleie",
