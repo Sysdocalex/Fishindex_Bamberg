@@ -1,9 +1,10 @@
+
 <!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fischindex und Lernmaterial für die Angelprüfung in Bamberg/Oberfranken/Bayern</title>
+<title>FischIndex und Lernmaterial für die Angelprüfung</title>
 <style>
 :root{
   --bg:#f3fbff; --card:#ffffff; --accent:#0f6c8f; --muted:#556;
@@ -86,28 +87,27 @@ h1{margin:0;font-size:20px;font-weight:700}
   background: #780a0a;
 }
 .regulation-links .btn-info {
-  background: #41688a;
+  background: #873434;
 }
 .regulation-links .btn-info:hover {
-  background: #045796;
+  background: #780a0a;
 }
 </style>
 </head>
 <body>
 <header>
   <div style="display:flex;align-items:center;gap:12px">
-    <h1>Fischindex und Lernmaterial für die Angelprüfung in Bamberg/Oberfranken/Bayern</h1>
+    <h1>FischIndex bayerischer Gewässer und Lernhilfen für die Fischerprüfung in Bayern</h1>
   </div>
 </header>
 
 <div class="controls">
-  <input id="q" placeholder="Suche (deutscher oder tschechischer Name, Schonzeit...)" />
+  <input id="q" placeholder="Suche (Name, Schonzeit...)" />
   <select id="statusFilter">
     <option value="">Alle Status</option>
     <option value="heimisch">heimisch</option>
     <option value="gefährdet">gefährdet</option>
     <option value="ausgestorben">ausgestorben</option>
-    <option value="unbekannt">unbekannt</option>
   </select>
   <select id="sortBy">
     <option value="">Sortieren</option>
@@ -122,18 +122,13 @@ h1{margin:0;font-size:20px;font-weight:700}
 	<div class="grid" id="grid"></div>
 
 <div class="regulation-container">
-    <h3><strong>Zusätzliche Bestimmungen der <a href="https://www.untere-schiffer-und-fischerzunft-bamberg.de/angelkarten/bestimmungen/" target="_blank">Unteren Schiffer- u. Fischerzunft Bamberg</a> (Regnitz) zur Bezirksfischereiverordnung / AVBayFiG:</strong><br>Besatzschonzeit für Karpfen, Weißfische und Schleie vom 15.10. bis einschließlich 20.11. Während dieser Zeit ist das Raubfischangeln nur mit Köderfischen von min. 20 cm erlaubt.</h3>
-  </div>
-
-<div class="regulation-container">
-  <h3>Links zu Fischereiverordnung und -Bestimmungen Bayer./Ofr. FischG.</h3>
+  <h3>Links zu Fischereiverordnung und -Bestimmungen für Bayern (AVBayFiG) + Oberfranken FischG. (regional)</h3>
   <div class="regulation-links">
-    <a href="https://www.gesetze-bayern.de/Content/Document/BayFischG" target="_blank" class="btn">BayFiG</a>
-    <a href="https://www.gesetze-bayern.de/Content/Document/BayAVFiG-ANL_1" target="_blank" class="btn btn-secondary">AVBayFiG (Schonzeiten)</a>
-    <a href="https://www.tegof.de/service/gesetze/bezirksfischereiverordnung_fuer_oberfranken.html" target="_blank" class="btn btn-info">BezirksFV Ofr.</a>
-    <a href="https://www.verkuendung-bayern.de/gvbl/2025-126/" target="_blank" class="btn btn-info">Novelle 2025</a>
-    <a href="https://www.untere-schiffer-und-fischerzunft-bamberg.de/angelkarten/bestimmungen/" target="_blank" class="btn btn-info">Untere Schiffer- u. Fischerzunft Bamberg</a>
-    <a href="https://www.lfvbayern.de/" target="_blank" class="btn btn-info">Landesfischereiverband Bayern e.V.</a>
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayAVFiG/true" target="_blank" class="btn">BayFischG</a>
+    <a href="https://www.gesetze-bayern.de/Content/Document/BayAVFiG-ANL_1" target="_blank" class="btn btn-secondary">Schonzeiten und -maße für Bayern (AVBayFiG)</a>
+    <a href="https://docs.google.com/viewerng/viewer?url=https://bfvo.de/wp-content/uploads/2026/07/0315_251124152430_001.pdf"
+target="_blank" class="btn btn-secondary">Schonmaße und Fischereiverordnung für Oberfranken (BezFiV-OFr)</a>
+    <a href="https://www.lfvbayern.de/fischlexikon" target="_blank" class="btn btn">Landesfischereiverband Bayern e.V. (Fischlexikon)</a>
   </div>
 </div>
 
@@ -141,15 +136,28 @@ h1{margin:0;font-size:20px;font-weight:700}
   <h3>Links zur Online-Fischerprüfung (Simulation) und zum offiziellen, kompletten Prüfungsfragenkatalog 2026 der Staatlichen Fischerprüfung Bayern</h3>
   <div class="regulation-links">
     <a href="images/Fragenkatalog_2026.pdf" target="_blank" class="btn btn-down"><strong>Download</strong> Prüfungsfragenkatalog </a>
-    <a href="https://fischerpruefung-online.bayern.de/fprApp/Uebungspruefung/AnmeldungUebungspruefung.xhtml" target="_blank" class="btn btn-down"><b>Prüfung simulieren</b> | Anmeldecode <span style="color: #ff0404;"><strong><em>000000</em></strong></span> eingeben</a>
+    
+    <a href="https://fischerpruefung-online.bayern.de/fprApp/Uebungspruefung/AnmeldungUebungspruefung.xhtml" target="_blank" class="btn btn-info"><strong>Prüfung simulieren</strong> | Anmeldecode <span style="color: #ff0404;"><strong><em>000000</em></strong></span> eingeben</a>
   </div>
 </div>
 
 <div class="footer">
-  Created and edited by <b>@Sysdocalex</b> on GitHub Pages
+  Created and edited by <b>@Sysdocalex</b> at GitHub.com; Fotos: ©Andreas Hartl (LFV Fischlexikon)
 </div>
 
 <script>
+// Tschechische Anzeigen automatisch ausblenden
+document.addEventListener('DOMContentLoaded', function() {
+  // Alle Elemente mit "Tschechisch:" ausblenden
+  const allFields = document.querySelectorAll('.field');
+  allFields.forEach(field => {
+    const strong = field.querySelector('strong');
+    if (strong && strong.textContent.includes('Tschechisch')) {
+      field.style.display = 'none';
+    }
+  });
+});
+
 const data = [
   {
     "name":"Aal",
@@ -213,7 +221,7 @@ const data = [
     "exam":"Welche Fischart hat den größten Sauerstoffbedarf? -- Bachforelle<br>Welche Fischarten haben eine einkammerige Schwimmblase? -- Bachforelle und Äsche<br>Woran erkennt man Forellenartige? -- Fettflosse<br>Schonzeit Bachforelle? -- 01.10. - 15.03., Mindestmaß 26 cm",
     "czech_exam":"Který druh ryby má nejvyšší potřebu kyslíku? -- pstruh obecný potoční (Bachforelle)<br>Které druhy ryb mají jednokomorový plynový měchýř? -- Pstruh potokový (Bachforelle) a Lipan podhorní (Äsche)<br>Jak poznáte ryby z čeledi pstruhovitých? -- Tuková ploutev<br>Ochranná doba pstruha potočního (Bachforelle)? -- 01.10. - 15.03., minimální délka 26 cm",
     "schonzeit":"01.10. - 15.03.",
-    "schonmass":"26 cm<br>(33 cm regional)",
+    "schonmass":"26 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Bachforelle",
     "wiki":"https://cs.wikipedia.org/wiki/Pstruh_obecný_potoční"
@@ -247,7 +255,7 @@ const data = [
     "exam":"Wie unterscheiden sich Bach- und Seesaibling? -- Die bauchseitigen roten Flossen haben beim Bachsaibling einen weißen und schwarzen Streifen als Vorderrand, beim Seesaibling nur einen weißen Streifen.<br>Wo findet man bei einem männlichen Bachsaibling den Laichhaken? -- am Unterkiefer<br>Welche Fischarten waren ursprünglich in den bayerischen Gewässern nicht heimisch?  -- Bachsaibling und Regenbogenforelle",
     "czech_exam":"Jak se liší siven americký (Bach-) a siven jazerni (Seesaibling)? -- Červené ploutve na spodní straně siven americký (Bachsaibling) mají na náběžné hraně bílý a černý pruh, zatímco siven jazerní (Seesaibling) má pouze bílý pruh.<br>Kde se u samce siven americký nachází háček na tření? -- Na spodní čelisti.<br>Které druhy ryb původně nepocházely z bavorských vod? -- siven americký (Bachsaibling) a pstruh duhový (Regenbogenforelle)",
     "schonzeit":"(01.10. - 15.03. regional)",
-    "schonmass":"-",
+    "schonmass":"—",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Bachsaibling",
     "wiki":"https://cs.wikipedia.org/wiki/Siven_americk%C3%BD"
@@ -280,7 +288,7 @@ const data = [
     "czech_features":"Vysokozadý, z boku zploštělý, malá koncová tlamka<br>Boční linie jen 5-6 šupin<br>Modrozelený pruh od kořene ocasu až ke středu těla<br>Samec během tření pestrý a zářivý",
     "exam":"Welche Fischarten haben unvollständige, bzw. verkürzte Seitenlinien? -- Moderlieschen und Bitterling<br>Welche Fischart legt ihre Eier mit Hilfe einer Legeröhre in Teichmuscheln ab? -- Bitterling<br>Ein Indikator für sauberes Wasser. Welche Fischart ist das? -- Bitterling<br>Schonzeit Bitterling? -- Ganzjährig geschützt",
     "czech_exam":"Které druhy ryb mají neúplné nebo zkrácené boční čáry? -- Slunka obecná (Moderlieschen) a hořavka duhová (Bitterling)<br>Který druh ryby klade svá vajíčka pomocí kladélka do rybničních mušlí? -- Hořavka duhová (Bitterling)<br>Indikátor čisté vody. O který druh ryby se jedná? -- Hořavka duhová (Bitterling)<br>Období hájení Hořavka duhová(Bitterling)? -- Celoročně chráněná",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Bitterling_(Fischart)",
@@ -331,8 +339,8 @@ const data = [
     "czech_features":"Má tělo silně zploštělé ze stran s relativně velkou hlavou a špičatým čenichem<br>Lehce horní postavená tlamka je relativně malá<br>Hlava a tělo jsou bez šupin a místo šupin nesou kostěné destičky<br>Podle jejich počtu se rozlišují tři nebo čtyři formy",
     "exam":"Welche Fischart hat Knochenplatten statt Schuppen? -- Dreistachliger Stichling<br>Welche Fischarten haben Rückenstacheln ohne Flossenhäute? -- Dreistachliger und Neunstachliger Stichling<br>Welche Fischart baut ein Nest aus Pflanzenteilen und betreibt intensive Brutpflege? -- Dreistachliger Stichling",
     "czech_exam":"Který druh ryby má kostěné destičky místo šupin? -- Koljuška tříostná (3-stachliger Stichling)<br>Které druhy ryb mají hřbetní trny bez plavebních blan? -- Koljuška tříostná (3-stachliger Stichling) a devítihrbá tříostná (9-stacheliger Stichling)<br>Který druh ryby staví hnízdo z rostlinných částí a intenzivně se stará o potomstvo? -- Koljuška tříostná (3-stachliger Stichling)",
-    "schonzeit":"-",
-    "schonmass":"-",
+    "schonzeit":"—",
+    "schonmass":"—",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Dreistachliger_Stichling",
     "wiki":"https://cs.wikipedia.org/wiki/Koljuška_tříostná"
@@ -449,8 +457,8 @@ const data = [
     "czech_features":"Malý tlamní štěrbin, dvě vousky u úst, dolní tlam.<br>Spodní ryba, má vřetenovité tělo s relativně velkými šupinami.<br>Samci mají větší prsní ploutve.<br>Důležitým rozpoznávacím znakem je podélný pás na bocích, s řadou tmavých až modravě lesklých, nepravidelných skvrn.",
     "exam":"Welche Fischart hat im Vergleich die kleinste Maulspalte? -- Gründling<br>Gründling ist ein typischer Fisch welcher Zone? -- Barbenzone / Forellenzone<br>Wie unterscheiden Sie eine einsömmerige Barbe (Jungbarbe) von einem Gründling? -- Die Barbe hat vier, der Gründling zwei Barteln.",
     "czech_exam":"Jaký druh ryby má ve srovnání nejmenší tlamičku? -- Hrouzek obecný (Gründling)<br>Hrouzek obecný (Gründling) je typická ryba které zóny? -- Parmová zóna (Barben-zone) / Pstruhová zóna (Forellen-zone)<br>Jak rozlišujete jednoročního parma obecná (Barbe) (mladého parma) od hrouzek obecný? -- Parma obecná má čtyři(Gründling), hrouzek obecný (Barbe) dva vousky.",
-    "schonzeit":"-",
-    "schonmass":"–",
+    "schonzeit":"—",
+    "schonmass":"—",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Gründling",
     "wiki":"https://cs.wikipedia.org/wiki/Hrouzek_obecný"
@@ -500,8 +508,8 @@ const data = [
     "czech_features":"Má trup ve tvaru torpéda s výrazně dozadu posunutou hřbetní ploutví.<br>Hlava je plochá s velkýma očima. Tlama je ve tvaru kachního zobáku s širokým ústním štěrbinou.<br>V dolní čelisti je několik silných, velmi ostrých špičáků. Zuby v horní čelisti jsou sklápěcí a činí únik kořisti téměř nemožným.<br>Štiky mají (Hechte) malé šupiny, postranní čára je několikrát přerušena.",
     "exam":"Welche Fischart hat ein entenschnabelartiges, oberständiges Maul und einen abgeflachten Kopf? -- Hecht<br>Welche Art von Schuppen hat der Hecht? -- Rundschuppen<br>Welche Fischart hat am Rücken nur eine Flosse? -- Hecht<br>Der Hecht hat -- eine weit nach hinten zurückgesetzte Rückenflosse",
     "czech_exam":"Který druh ryby má zobákovitě tvarovaná, horní ústa a zploštělou hlavu? -- Štika (Hecht)<br>Jaký typ šupin má štika (Hecht)? -- Kruhové šupiny<br>Který druh ryby má na zádech pouze jednu ploutev? -- Štika (Hecht)<br>Štika (Hecht) má -- hřbetní ploutev posunutou daleko dozadu",
-    "schonzeit":"15.02. - 30.04.<br>(15.02. - 31.05. regional)",
-    "schonmass":"50 cm<br>(60 cm regional)",
+    "schonzeit":"15.02. - 30.04.",
+    "schonmass":"50 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Hecht",
     "wiki":"https://cs.wikipedia.org/wiki/%C5%A0tika_obecn%C3%A1"
@@ -551,7 +559,7 @@ const data = [
     "czech_features":"Divoká forma kapra je protáhlá a z boků málo zploštělá s úplně pokrytým šupinami tělem.<br>Hlava je protáhlá a kuželovitá s malým okem a ústy, která lze vyvinout do chobotu.<br>Má tři řady silných, stoličkovitých hltanových zubů a dvě páry vousků po stranách horního rtu.<br>Šupiny jsou velmi velké a pevné.",
     "exam":"Welche ist die artenreichste Gruppe der einheimischen Süßwasserfische? -- die Gruppe der Karpfenartigen (Cypriniden)<br>Wie hat man sich die Urform des Karpfens vorzustellen? -- langgestreckt und voll beschuppt<br>Welche Fischart hat ein rüsselartig vorstülpbares Maul? -- Karpfen",
     "czech_exam":"Která je nejpočetnější skupina domácích sladkovodních ryb? -- skupina kaprovitých (Karpfenartigen) (cyprinidů)<br>Jak si lze představit původní formu kapra (Karpfens)? -- protáhlou a celou potaženou šupinami<br>Který druh ryby má rypcovitě vysunutelné ústa? -- Kapr (Karpfen)",
-    "schonzeit":"(15.10. - 20.11. regional/Regnitz)",
+    "schonzeit":"—",
     "schonmass":"35 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Karpfen",
@@ -585,7 +593,7 @@ const data = [
     "czech_features":"Losos atlantský má štíhlé, protáhlé tělo s špičatým čenichem. <br>Štíhlý ocasní stopka s jasným úchytem zaříznuté (konkávní) ocasní ploutve je výrazný. <br>Má tučnou ploutev.<br>Barva těla je stříbrně lesklá.<br>Existuje velké riziko záměny s mořským pstruhem.<br>V období tření je spodní čelist mlíčáka silně zakřivená nahoru (třecí hák)",
     "exam":"Welche Fischart steigt zum Laichen vom Meer in das Süßwasser auf? -- Lachs<brWo laicht der Lachs?  -- im Süßwasser<br>Welche Fischart führt eine Laichwanderung durch? -- Lachs<br>Welche Fischart hat einen schlanken Schwanzstiel mit eingeschnittener Schwanzflosse? -- Lachs<br>Welche Fischart hat einen stark nach oben gekrümmten Unterkiefer? -- Lachs<br>Welche Fischart hat eine Fettflosse? -- Lachs",
     "czech_exam":"Který druh ryby se při tření vydává z moře do sladké vody? -- Losos (Lachs)<br>Kde se losos tře? -- ve sladké vodě<br>Který druh ryby provádí třecí migraci? -- Losos (Lachs)<br>Který druh ryby má štíhlý ocasní stopku s zaříznutou ocasní ploutve? -- Losos<br>Který druh ryby má silně zvednutou dolní čelist? -- Losos (Lachs)<br>Který druh ryby má tukovou ploutev? -- Losos (Lachs)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"ausgestorben",
     "description_link":"https://de.wikipedia.org/wiki/Atlantischer_Lachs",
@@ -704,7 +712,7 @@ const data = [
     "czech_features":"Má štíhlé tělo, téměř kulaté v průřezu.<br>Ústa jsou poměrně malá a mírně podřízená.<br>Šupiny jsou malé.<br>Ocasní ploutev je nápadně hluboce rozvetvená a ocasní stopka poměrně štíhlá.",
     "exam":"Welche Fischarten sind in Bayern ursprünglich nur im Donaueinzugsgebiet heimisch? -- Huchen, Frauennerfling und Perlfisch<br>Wie ist die Stellung des Mauls beim Perlfisch? -- leicht unterständig",
     "czech_exam":"Které rybí druhy jsou v Bavorsku původně domácí pouze v povodí Dunaje? -- Hlavatka obecná (Huchen), plotice lesklá (Frauennerfling) a plotice perleťová tažná (Perlfisch)<br>Jaké je postavení tlamy u perlové ryby (Perlfisch)? -- lehce spodní",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"stark gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Perlfisch",
@@ -739,7 +747,7 @@ const data = [
     "exam":"Welche Fischarten waren ursprünglich in den bayerischen Gewässern nicht heimisch? -- Bachsaibling und Regenbogenforelle<br>Die Regenbogenforelle hat? -- keine Schlundzähne.<br>Welches Unterscheidungsmerkmal von Bach- und Regenbogenforelle ist zutreffend? - Die Regenbogenforelle hat auf der Schwanzflosse schwarze Punkte.",
     "czech_exam":"Které druhy ryb nebyly původně v bavorských vodách domácí? -- Siven americký (Bachsaibling) a pstruh duhový (Regenbogenforelle)<br>Pstruh duhový (Regenbogenforelle) má? -- žádné hltanové zuby.<br>Který rozlišovací znak pstruha obecného (Bachforelle) a pstruha duhového (Regenbogenforelle) je správný? - Pstruh duhový (Regenbogenforelle) má na ocasní ploutvi černé tečky.",
     "schonzeit":"15.12. - 15.03.<br>(01.10. - 15.03. regional)",
-    "schonmass":"26 cm<br>(33 cm regional)",
+    "schonmass":"26 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Regenbogenforelle",
     "wiki":"https://cs.wikipedia.org/wiki/Pstruh_duhov%C3%BD"
@@ -755,7 +763,7 @@ const data = [
     "czech_features":"Jednotlivé zástupce čeledi síhovitých je obtížné rozeznat podle jejich vnějších znaků.<br>Vodítkem je průměrný počet žaberních tyčinek populace.<br>Společnou vlastností těchto na sleď podobných ryb je však malá tuková ploutev.<br>Tělo je protáhlé a z boků zploštělé.<br>Oko je velké s kapkovitou zornicí, jejíž špička směřuje dopředu.<br>Ocasní ploutev je hluboce rozříznutá.<br>Hlava je malá s koncovou nebo spodní čelistní štěrbinou v závislosti na ekotypu.<br><b>Potrava:</b> Plankton nebo larvy hmyzu, červi a slimáci.",
     "exam":"Welche Fischart hat am Rücken zwei Flossen? -- Renke (Felchen)<br>Welche Fische haben besonders lange und feine Kiemenreusendornen? -- Felchen-, Renkenartige (Coregoniden)<br>Was fressen Schwebrenken (kleinwüchsige Renken 'Coregonen') hauptsächlich? -- Plankton bzw. Insektenlarven, Würmer und Schnecken<br>Welche Fischart hat am Rücken zwei Flossen? -- Renke (Felchen)<br>Welche Fischart lebt vorzugsweise in der Freiwasserzone eines Sees? -- Renke (Felchen)",
     "czech_exam":"Který druh ryby má na zádech dvě ploutve? -- Síh (Coregonus) (Renke/Felchen)<br>Které ryby mají zvlášť dlouhé a jemné žaberní lišty? -- Felchy (Felchen), Síh (Coregonus) (Renken 'Coregonidae')<br>Co hlavně žerou siveni (malí siveni 'Coregoni')? -- Plankton nebo larvy hmyzu, červi a slimáci<br>Který druh ryby má na zádech dvě ploutve? -- Síh (Coregonus) (Renke/Felchen)<br>Který druh ryby žije nejraději v otevřené vodní zóně jezera? -- Coregonus (Renke/Felchen)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Coregonus#Artenübersicht",
@@ -789,7 +797,7 @@ const data = [
     "czech_features":"Má vysoce hřbetní, kompaktní tělo.<br>Čelisti jsou výrazně horní s šikmo směrem vzhůru stojící štěrbinou úst.<br>Iris je více či méně žlutý.<br>Záďová ploutev začíná na rozdíl od střevle výrazně za základem břišní ploutve.<br>Ploutve jsou světle červené až tmavě červené.<br>Velké šupiny tvoří na břišní straně mezi břišní a řitní ploutví střešníkovitý kýl",
     "exam":"Wie unterscheidet man Rotfeder und Rotauge? -- Bei der Rotfeder beginnt der Ansatz der Rückenflosse deutlich hinter dem Ansatz der Bauchflossen.<br>Bei welcher Fischart befindet sich zwischen den Bauchflossen und dem After eine scharfe Schuppenkante? -- Rotfeder<br>Bei welcher Fischart beginnt die Rückenflosse hinter dem Ansatz der Bauchflossen? -- Rotfeder",
     "czech_exam":"Jak se rozlišují perlín (Rotfeder) a plotice (Rotauge)? -- U perlína (Rotfeder) začíná základna hřbetní ploutve výrazně za základem břišních ploutví.<br>U které ryby se nachází mezi břišními ploutvemi a řitní ploutví ostrá šupinová hrana? -- Perlín<br>U které ryby začíná hřbetní ploutev za základem břišních ploutví? -- Perlín (Rotfeder)",
-    "schonzeit":"Ganzjährig, Fangverbot in Flüssen",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Rotfeder",
@@ -823,7 +831,7 @@ const data = [
     "czech_features":"Má válcovité tělo, vpředu téměř kruhové, vzadu z boků stlačené.<br>Malá, spodní ústa jsou obklopena deseti vousky. Šest delších je na horní čelisti, čtyři kratší na dolní čelisti.<br>Přední nosní dírky jsou trubkovitě prodloužené.<br>Chybějí typické rozkládací očnice pro sekavcovití (Schmerlen)",
     "exam":"Welche Fischart gehört zu den Schmerlenartigen (Cobitiden)? -- Schlammpeitzger<br>Welche Fischart kommt mit einem vergleichsweise geringen Sauerstoffgehalt im Wasser aus?  -- Schlammpeitzger",
     "czech_exam":"Který druh ryby patří mezi sekavcovití (Cobitida)? -- Piskoř pruhovaný (Schlammpeitzger)<br>Který druh ryby dokáže přežít při relativně nízkém obsahu kyslíku ve vodě?  -- Piskoř pruhovaný (Schlammpeitzger)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"stark gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Schlammpeitzger",
@@ -840,8 +848,8 @@ const data = [
     "czech_features":"Má středně vysoké hřbetní tělo. <br>Ploutve jsou jasně zaoblené, kořen ocasu je nápadně vysoký. <br>Malá koncová tlama může být vyčnívající a v koutku úst má krátký vousový nit. <br>Duhovka očí je obvykle intenzivně červená nebo tmavě oranžová.<br>Chvostová ploutev je na rozdíl od ostatních ploutví ne zaoblená, ale rovná.<br>Pohlaví lze rozlišit podle různé velikosti břišních ploutví.<br>Má velmi malé šupiny, které jsou hluboko v kůži a pokryté silnou vrstvou slizu.",
     "exam":"Bei welchen Fischarten ist die Bestimmung des Geschlechts anhand ihrer Flossen möglich? -- Schleie und Äsche<br>Welche Fischart ist besonders widerstandsfähig und kann auch in stark verschmutzten Gewässern überleben? -- Schleie<br>Welche Fischarten haben keinen Magen? -- Schleie und Rotauge<br>Wie viele Barteln hat die Schleie? -- am Maul zwei kurze Barteln",
     "czech_exam":"U kterých druhů ryb je možné určit pohlaví podle jejich ploutví? -- Lín (Schleie) a Lipan (Äsche)<br>Který druh ryby je obzvlášť odolný a může přežít i ve silně znečištěných vodách? -- Lín (Schleie)<br>Které druhy ryb nemají žaludek? -- Lín a plotice obecná (Rotauge)<br>Kolik vousků má lín (Schleie)? -- u tlamy dva krátké vousky",
-    "schonzeit":"01.05. - 30.06<br>(+ 15.10. - 20.11. regional/Regnitz)",
-    "schonmass":"26 cm<br>(33 cm regional/Regnitz)",
+    "schonzeit":"01.05. - 30.06",
+    "schonmass":"26 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Schleie",
     "wiki":"https://cs.wikipedia.org/wiki/L%C3%ADn_obecn%C3%BD"
@@ -891,7 +899,7 @@ const data = [
     "czech_features":"Má protáhlé tělo.<br>Jeho hlava má podlouhlý, špičatě zakončený tvar; čenich je malý a spodně uložený.<br>Na spodní straně hlavy jsou ploché slizové jamky.<br>Tělo je pokryté malými hřebenovitými šupinami, které jsou pod tlustou vrstvou slizu.<br>Žaberní víčka nesou na konci dlouhý trn, na předním žaberním víčku je ještě krátký trn.<br>Dva hřbetní ploutve jsou propojené, přičemž přední část má trnité paprsky, zadní část má jen měkké paprsky",
     "exam":"Welche Fischarten gehören zu den Barschartigen (Perciden)? -- Schrätzer und Streber<br>Welche Fischarten haben Kammschuppen? -- Schrätzer und Kaulbarsch<br>Bei welcher Fischart hat die stachelstrahlige erste Rückenflosse regelmäßig angeordnete dunkle Flecken? -- Schrätzer",
     "czech_exam":"Který druh ryby patří mezi okounovité (Percidae)? -- Ježdík žlutý (Schrätzer) a drsek menší (Streber)<br>Který druh ryby má hřebenovité šupiny? -- Ježdík žlutý (Schrätzer) a ježdík obecný (Kaulbarsch)<br>Který druh ryby má na hřbetní ploutvi pravidelně uspořádané tmavé skvrny? -- Ježdík žlutý (Schrätzer)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"stark gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Schr%C3%A4tzer",
@@ -941,7 +949,7 @@ const data = [
     "czech_features":"Má protáhlé a po stranách silně zploštělé tělo.<br>Malá spodní ústa nesou šest vousků na horním rtu.<br>Pod okem sedí pohyblivý, dvoubodý ostn.<br>Má velmi malé šupiny a neúplnou postranní čáru.<br>Druhý paprsek prsní ploutve je u samce (mléčník) (Milchner) ztlustlý.",
     "exam":"Welche Fischart hat einen beweglichen zweispitzigen Dorn unter dem Auge? -- Steinbeißer (Dorngrundel)<br>Wie viele Barteln hat der Steinbeißer (Dorngrundel)? -- sechs<br>Welcher Fisch ist ganzjährig geschont? -- Steinbeißer<br>Welche Fischart hat eine unvollständige Seitenlinie? -- Steinbeißer",
     "czech_exam":"Který druh ryby má pohyblivý dvoubodý ostn pod okem? -- Sekavec písečný (Steinbeißer/Dorngrundel)<br>Kolik vousků má sekavec písečný (Steinbeißer/Dorngrundel)? -- šest<br>Která ryba je chráněna po celý rok? -- Sekavec písečný (Steinbeißer/Dorngrundel)<br>Který druh ryby má neúplnou postranní čáru? -- Sekavec písečný (Steinbeißer/Dorngrundel)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Steinbei%C3%9Fer_(Fisch)",
@@ -958,7 +966,7 @@ const data = [
     "czech_features":"Rakovec říční je s délkou necelých 12 cm nejmenším evropským druhem raků.<br>Samice zůstávají výrazně menší (cca 8 cm).<br>Spodní strany klepet jsou bledě žlutošedé a nikdy nejsou červené, jako u raka šlechtěného.<br>Má jednodílné třísla přes oči. <br>Vajíčka, která se přichytávají na plavoucí nohy na spodní straně ocasu, jsou samice nosena a pečována o ně po celou zimu",
     "exam":"Als Griffel (Griffelbeine) werden bezeichnet? -- das Begattungsorgan beim männlichen Edel- und Steinkrebs<br>Wo entwickeln sich die Eier von Edel- und Steinkrebs? -- Unter dem Hinterleib des weiblichen Tieres<br>Was ist für den Steinkrebs kennzeichnend? -- Er bleibt klein und hat einen schmutzig weißen Bauch, eine dunkle Oberseite und dunkle Scheren ",
     "czech_exam":"Jako tyčinka (Griffel) (tyčinkové nohy) (Griffelbeine) se označuje? -- pohlavní orgán samce raka ušlechtilého (Edelkrebs) a kamenáče(Steinkrebs)<br>Kde se vyvíjejí vajíčka u raka říčního (Edelkrebs) a raka kamenného (Steinkrebs)? -- Pod zadečkem samice<br>Co je charakteristické pro raka kamenného (Steinkrebs)? -- Zůstává malý a má špinavě bílý břicho, tmavý hřbet a tmavé klepeta",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Steinkrebs",
@@ -975,7 +983,7 @@ const data = [
     "czech_features":"Má protáhlé, vřetenovité tělo. <br>Ocasní stopka je rotační a pozoruhodně dlouhá a tenká. <br>Prsní a břišní ploutve lze zarovnat tak, že vzniká negativní tlak mezi tělesem a zemí při silných proudech.<br>Žaberní víčka nesou ostrý trn.<br>Ústa jsou spodní.<br>Má dvě od sebe oddělené hřbetní ploutve, první je vybavena trnovými paprsky.<br>Vážkový měchýř je zcela zaniklý. Tak je schopen se i při nejsilnějším proudu držet na hladkém povrchu.",
     "exam":"Wo sind Streber und Zingel ursprünglich heimisch? -- im Flussgebiet der Donau<br>Welche Fischart hat eine völlig rückgebildete Schwimmblase? -- Streber<br>Welche Fischart hat am Körper vier bis fünf dunkle, unregelmäßige Querbinden, die scharf abgegrenzt sind? -- Streber",
     "czech_exam":"Kde drsek menší (Streber) a drsek větší (Zingel) doma? -- v povodí Dunaje<br>Který druh ryby má zcela redukovanou plynovou měchýř? -- Drsek menší (Streber)<br>Který druh ryby má na těle čtyři až pět tmavých, nepravidelných příčných pásů, které jsou jasně ohraničené? -- Drsek menší (Streber)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"stark gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Streber_(Fisch)",
@@ -992,7 +1000,7 @@ const data = [
     "czech_features":"Má protáhlé, téměř vřetenovité tělo.<br>Ústa jsou mírně spodní.<br>Hřbetní ploutev je nad břišními ploutvemi.<br>Šupinatá kůže je šedohnědá, modravě lesklá, záda a boky jsou stříbřitá, břicho je bílé.",
     "exam":"Welchen Lebensraum bevorzugt der Strömer? -- schnell fließende Gewässer mit kiesigem Untergrund<br>Welche karpfenartigen Fische (Cypriniden) sind ganzjährig geschont? -- Strömer, Schneider",
     "czech_exam":"Jaké prostředí upřednostňuje Střevle (Strömer)? -- rychle tekoucí vody s štěrkovým dnem<br>Které kaprovité ryby (kaprovití) jsou chráněny po celý rok? -- střevle (Strömer), jelec (Schneider)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
     "schonmass":"–",
     "status":"gefährdet",
     "description_link":"https://de.wikipedia.org/wiki/Str%C3%B6mer_(Fisch)",
@@ -1043,7 +1051,7 @@ const data = [
     "czech_features":"Má protáhlé, vřetenovité tělo s špičatou hlavou.<br>„Kočičí oči“ se na světle lesknou stříbrně.<br>Koncová ústní štěrbina sahá až k zadní části oka, často i za ni.<br>Kromě malých kartáčových zubů jsou v horní i dolní čelisti patrné velké špičáky („psí zuby“).<br>Má dva hřbetní ploutve, které jsou od sebe odděleny krátkou vzdáleností, první s ostrými trnovými paprsky.<br>Na konci žaberního krytu se nachází krátký trn.<br>Tělo je pokryto malými hřebenovými šupinami.",
     "exam":"Welche Fischart hat Hunds- oder Fangzähne? -- Zander<br>Welche Fischart hat keine Kauplatte? -- Zander<br>Der Zander hat? -- Kammschuppen<br>Welche Fischart hat brustständige Bauchflossen? -- Zander",
     "czech_exam":"Který druh ryby má psí nebo chytací zuby? -- Candát (Zander)<br>Který druh ryby nemá žvýkací desku? -- Candát (Zander)<br>Candát má? -- Hřebenovité šupiny<br>Který druh ryby má prsní ploutve posazené na břiše? -- Candát (Zander)",
-    "schonzeit":"15.02 - 30.04.<br>(15.02. - 31.05. regional)",
+    "schonzeit":"15.02 - 30.04.",
     "schonmass":"50 cm",
     "status":"heimisch",
     "description_link":"https://de.wikipedia.org/wiki/Zander",
@@ -1060,7 +1068,7 @@ const data = [
 	  "czech_features":"Tělo je pokryto malými hřebínkovými šupinami, hlava jen částečně.<br>Hlava se zužuje směrem k čenichu a je pohyblivá do stran. <br>Ústa jsou malá a podřízená. <br>Velké oči se mohou pohybovat nezávisle na sobě.<br>Žábry mají špičatý trn.<br>Má dva jasně oddělené hřbetní ploutve, první je ozbrojena trnovými paprsky.<br>Endemický druhořský okoun dunajský.<br>Upřednostňuje proudné, mělké pobřežní úseky oblasti cejna a parmaty (Barben- und Brachsenregion)",
 	  "exam":"Wo sind Streber und Zingel ursprünglich heimisch? -- Im Flussgebiet der Donau<br>Welche Fischart hat Kammschuppen? -- Zingel<br>Welche Barscharten sind  ganzjährig geschont? -- Streber und Zingel",
     "czech_exam":"Kde jsou původně doma Drsek menší (Streber) a větší (Zingel)? -- V povodí Dunaje<br>Který druh ryby má hřebenité šupiny? -- Drsek větší (Zingel)<br>Které druhy okounů jsou chráněny celý rok? -- Drsek menší (Streber) a Drsek větší (Zingel)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
 	  "schonmass":"–",
 	  "status":"stark gefährdet",
 	  "description_link":"https://de.wikipedia.org/wiki/Zingel_(Fisch)",
@@ -1077,7 +1085,7 @@ const data = [
 	  "czech_features":"Má vysoko nasazené záda, z boků silně stlačené tělo.<br>Na rozdíl od kozy má sobol tupý, nahoru vyklenutý čumák s mírně spodní čelistí.<br>Výrazné je silně vyklenuté čumák nad očima.<br>Jako zvláštní znak se považuje jeho velmi dlouhý řitní ploutev.<br>Dolní lalok ocasní ploutve je o něco delší než horní.<br>Obývá dolní, tekoucí úseky řek v oblasti parmat (Barben-) a cejnů (Brachsen-region)",
 	  "exam":"Welche Tierart haben eine auffallend lange Afterflosse -- Zobel und Zope<br>Welche Tierart ist ganzjährig geschont? -- Zobel",
     "czech_exam":"Který druh zvířete má nápadně dlouhou řitní ploutev? -- Cejn perleťový (Zobel) a cejn siný (Zope)<br>Který druh zvířete je chráněn celoročně? -- Cejn perleťový (Zobel)",
-    "schonzeit":"ganzjährig geschont",
+    "schonzeit":"ganzjährig geschützt",
 	  "schonmass":"–",
 	  "status":"gefährdet",
 	  "description_link":"https://de.wikipedia.org/wiki/Zobel_(Fisch)",
@@ -1094,7 +1102,7 @@ const data = [
 	  "czech_features":"Tělo má hluboké, do stran stlačené tělo. Hlava je relativně malá, protáhlá a špičatá. Ústa jsou koncová, s otvorem směřujícím mírně nahoru. Oči jsou posazené daleko vpředu a jsou relativně velké. Obzvláště charakteristickým rysem je velmi dlouhá řitní ploutev",
     "exam":"Welche Tierart haben eine auffallend lange Afterflosse -- Zobel und Zope<br>Welche Tierart ist ganzjährig geschont? -- Zope",
     "czech_exam":"Který druh zvířete má nápadně dlouhou řitní ploutev? -- Cejn perleťový (Zobel) a cejn siný (Zope)<br>Který druh zvířete je chráněn celoročně? -- Cejn siný (Zope)",
-	  "schonzeit":"ganzjährig geschont",
+	  "schonzeit":"ganzjährig geschützt",
 	  "schonmass":"–",
 	  "status":"gefährdet",
 	  "description_link":"https://de.wikipedia.org/wiki/Zope_(Fisch)",
@@ -1145,27 +1153,23 @@ function renderCards(items){
     nameRow.appendChild(statusSpan);
 
     const also = (it.also_called && it.also_called !== it.name) ? it.also_called : "";
-    const czechAlso = (it.czech_also_called && it.czech_also_called !== it.czech) ? it.czech_also_called : "";
 
     const meta=document.createElement("div");
     meta.className="meta";
     meta.innerHTML=`
       <div class="field"><strong>Auch genannt:</strong><br><span class="small"><b>${also}</b></span></div>
-      <div class="field"><strong>České jméno:</strong><br><span class="small"><b>${it.czech || "–"}</b></span></div>
 
       <details class="detailsbox">
         <summary><strong>Systematik</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.systematics || ""}</span></div>
-          <div class="field"><strong>Systematika:</strong><br><span class="small"><b>${it.czech_systematics || "–"}</b></span></div>
         </div>
       </details>
 
       <details class="detailsbox">
         <summary><strong>Merkmale</strong></summary>
         <div class="detailcontent">
-          <div class="field"><span class="small">${it.features || ""}</span></div>
-          <div class="field"><strong>Charakteristiky:</strong><br><span class="small"><b>${it.czech_features || "–"}</b></span></div>
+          <div class="field"><span class="small">${it.features || ""}</span>
         </div>
       </details>
 
@@ -1173,7 +1177,6 @@ function renderCards(items){
         <summary><strong>Typische Prüfungsfragen</strong></summary>
         <div class="detailcontent">
           <div class="field"><span class="small">${it.exam || ""}</span></div>
-          <div class="field"><strong>Typické zkušební otázky:</strong><br><span class="small"><b>${it.czech_exam || "–"}</b></span></div>
         </div>
       </details>
 
@@ -1181,7 +1184,7 @@ function renderCards(items){
       <div class="field"><strong>Schonmaß:</strong><br><span class="small">${it.schonmass || "–"}</span></div>
     `;
     const links=document.createElement("p");
-    links.innerHTML=`<a class="link" href="${it.description_link}" target="_blank">Beschreibung (de)</a> · <a class="link" href="${it.wiki}" target="_blank">Popis (cs)</a>`;
+    links.innerHTML=`<a class="link" href="${it.description_link}" target="_blank">Beschreibung (de)</a> `;
     content.appendChild(nameRow);
     content.appendChild(meta);
     content.appendChild(links);
