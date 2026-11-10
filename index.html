@@ -5,6 +5,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FischIndex und Lernmaterial für die Angelprüfung</title>
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Fischindex_Bamberg" />
+<link rel="manifest" href="/site.webmanifest" />
 <style>
 :root{
   --bg:#f3fbff; --card:#ffffff; --accent:#0f6c8f; --muted:#556;
@@ -14,8 +20,8 @@
 body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#123}
 header{background:var(--accent);color:#fff;padding:14px 18px;position:sticky;top:0;z-index:10}
 h1{margin:0;font-size:20px;font-weight:700}
-.controls{display:flex;gap:10px;align-items:center;padding:12px 18px;background:linear-gradient(180deg,#eaffff,transparent);flex-wrap:wrap}
-.controls input, .controls select{padding:8px 10px;border-radius:8px;border:1px solid #bcd;min-width:160px}
+.controls{display:flex;gap:10px;align-items:center;padding:12px 18px;background:linear-gradient(180deg,#6fc7c7,transparent);flex-wrap:wrap}
+.controls input, .controls select{padding:12px 10px;border-radius:8px;border:1px solid #bcd;min-width:2000px}
 .container{padding:18px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
 .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(10,30,40,.06);display:flex;flex-direction:column}
@@ -102,7 +108,7 @@ h1{margin:0;font-size:20px;font-weight:700}
 </header>
 
 <div class="controls">
-  <input id="q" placeholder="Suche (Name, Schonzeit...)" />
+  <input id="q" placeholder="Suche (Fischart, 'auch genannt', Schonzeit...)" />
   <select id="statusFilter">
     <option value="">Alle Status</option>
     <option value="heimisch">heimisch</option>
