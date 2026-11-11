@@ -1,10 +1,10 @@
-
 # FishIndex_Bayern
 
 [![Deploy static content to Pages](https://github.com/Sysdocalex/Fishindex_Bamberg/actions/workflows/static.yml/badge.svg)](https://github.com/Sysdocalex/Fishindex_Bamberg/actions/workflows/static.yml)
 
 
 Diese Webseite ist eine interaktive Fisch-Enzyklopädie aller heimischen Fischarten in den bayerischen Gewässern, mit aktuellen Fangbestimmungen, Schonmaßen und -zeiten.
+
 Inklusive Lehrmaterial und -hilfen für die Fischerprüfung in Bayern.
 
 An interactive fish encyclopedia for Bavarian, featuring current fishing regulations.
@@ -21,4 +21,6 @@ Screenshots Windows
 Android
 
 <img width="432" height="841" alt="Screenshot_Android" src="https://github.com/user-attachments/assets/5fbfbfa4-e1e4-46d8-9ff7-1e0daf66849b" />
+<img width="265" height="1911" alt="175778" src="https://github.com/user-attachments/assets/abc55e73-72e2-4807-aa7b-6b83b6c30262" />
+
 
